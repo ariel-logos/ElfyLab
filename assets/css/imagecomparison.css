@@ -156,14 +156,6 @@
     overflow: hidden;
 }
 
-.bal-after img {
-    padding: 0;
-}
-
-.bal-before img {
-    padding: 0;
-}
-
 .bal-before-inset {
     position: absolute;
     top: 0;
@@ -173,7 +165,7 @@
 
 .bal-after img,
 .bal-before img {
-    object-fit: cover;
+    /*object-fit: cover;*/
     position: absolute;
     width: 100%;
     height: 100%;
@@ -181,6 +173,7 @@
     top: 0;
     bottom: 0;
     left: 0;
+    padding: 0;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
