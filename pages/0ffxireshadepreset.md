@@ -48,5 +48,5 @@ Some Content about reshade.
   </div>
 </section>
 
-<script defer src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/imagecomparison.js' | relative_url }}"></script>
 
