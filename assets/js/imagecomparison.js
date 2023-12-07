@@ -1,55 +1,53 @@
-const imageComparisonSlider = document.querySelector('[data-component="image-comparison-slider"]')
+class BeforeAfter {
+    constructor(enteryObject) {
 
-function setSliderstate(e, element) {
-  const sliderRange = element.querySelector('[data-image-comparison-range]');
+        const beforeAfterContainer = document.querySelector(enteryObject.id);
+        const before = beforeAfterContainer.querySelector('.bal-before');
+        const beforeText = beforeAfterContainer.querySelector('.bal-beforePosition');
+        const afterText = beforeAfterContainer.querySelector('.bal-afterPosition');
+        const handle = beforeAfterContainer.querySelector('.bal-handle');
+        var widthChange = 0;
 
-  if (e.type === 'input') {
-    sliderRange.classList.add('image-comparison__range--active');
-    return;
-  }
+        beforeAfterContainer.querySelector('.bal-before-inset').setAttribute("style", "width: " + beforeAfterContainer.offsetWidth + "px;")
+        window.onresize = function () {
+            beforeAfterContainer.querySelector('.bal-before-inset').setAttribute("style", "width: " + beforeAfterContainer.offsetWidth + "px;")
+        }
+        before.setAttribute('style', "width: 50%;");
+        handle.setAttribute('style', "left: 50%;");
 
-  sliderRange.classList.remove('image-comparison__range--active');
-  element.removeEventListener('mousemove', moveSliderThumb);
+        //touch screen event listener
+        beforeAfterContainer.addEventListener("touchstart", (e) => {
+
+            beforeAfterContainer.addEventListener("touchmove", (e2) => {
+                let containerWidth = beforeAfterContainer.offsetWidth;
+                let currentPoint = e2.changedTouches[0].clientX;
+
+                let startOfDiv = beforeAfterContainer.offsetLeft;
+
+                let modifiedCurrentPoint = currentPoint - startOfDiv;
+
+                if (modifiedCurrentPoint > 10 && modifiedCurrentPoint < beforeAfterContainer.offsetWidth - 10) {
+                    let newWidth = modifiedCurrentPoint * 100 / containerWidth;
+
+                    before.setAttribute('style', "width:" + newWidth + "%;");
+                    afterText.setAttribute('style', "z-index: 1;");
+                    handle.setAttribute('style', "left:" + newWidth + "%;");
+                }
+            });
+        });
+
+        //mouse move event listener
+        beforeAfterContainer.addEventListener('mousemove', (e) => {
+            let containerWidth = beforeAfterContainer.offsetWidth;
+            widthChange = e.offsetX;
+            let newWidth = widthChange * 100 / containerWidth;
+
+            if (e.offsetX > 10 && e.offsetX < beforeAfterContainer.offsetWidth - 10) {
+                before.setAttribute('style', "width:" + newWidth + "%;");
+                afterText.setAttribute('style', "z-index:" + "1;");
+                handle.setAttribute('style', "left:" + newWidth + "%;");
+            }
+        })
+
+    }
 }
-
-function moveSliderThumb(e) {
-  const sliderRange = document.querySelector('[data-image-comparison-range]');
-  const thumb = document.querySelector('[data-image-comparison-thumb]');
-  let position = e.layerY - 20;
-
-  if (e.layerY <= sliderRange.offsetTop) {
-    position = -20;
-  }
-
-  if (e.layerY >= sliderRange.offsetHeight) {
-    position = sliderRange.offsetHeight - 20;
-  }
-
-  thumb.style.top = `${position}px`;
-}
-
-function moveSliderRange(e, element) {
-  const value = e.target.value;
-  const slider = element.querySelector('[data-image-comparison-slider]');
-  const imageWrapperOverlay = element.querySelector('[data-image-comparison-overlay]');
-
-  slider.style.left = `${value}%`;
-  imageWrapperOverlay.style.width = `${value}%`;
-
-  element.addEventListener('mousemove', moveSliderThumb);
-  setSliderstate(e, element);
-}
-
-function init(element) {
-  const sliderRange = element.querySelector('[data-image-comparison-range]');
-
-  if ('ontouchstart' in window === false) {
-    sliderRange.addEventListener('mouseup', e => setSliderstate(e, element));
-    sliderRange.addEventListener('mousedown', moveSliderThumb);
-  }
-
-  sliderRange.addEventListener('input', e => moveSliderRange(e, element));
-  sliderRange.addEventListener('change', e => moveSliderRange(e, element));
-}
-
-init(imageComparisonSlider);
