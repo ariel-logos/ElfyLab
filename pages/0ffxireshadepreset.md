@@ -26,7 +26,7 @@ Some Content about reshade.
                 </div>
             </div>
             <div class="bal-handle">
-                <span class=" handle-left-arrow"></span>
+                <span class="handle-left-arrow"></span>
                 <span class="handle-right-arrow"></span>
             </div>
         </div> 
