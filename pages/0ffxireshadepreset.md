@@ -12,14 +12,14 @@ Some Content about reshade.
 <div class="mainSection">
         <div id="one" class="bal-container">
             <div class="bal-after">
-                <img src="/ElfyLab2/img/5.jpg">
+                <img src="/ElfyLab2/beforeafter/img/5.jpg">
                 <div class="bal-afterPosition afterLabel">
                     After
                 </div>
             </div>
             <div class="bal-before">
                 <div class="bal-before-inset">
-                    <img src="/ElfyLab2/img/4.jpg">
+                    <img src="/ElfyLab2/img/beforeafter/4.jpg">
                     <div class="bal-beforePosition beforeLabel">
                         Before
                     </div>
