@@ -15,9 +15,7 @@
     font-size: 1.5rem;
 }
 
-img {
-    padding: 0;
-}
+
 
 @media all and (max-width: 479px) {
     .mainSection {
@@ -156,6 +154,14 @@ img {
     height: 100%;
     z-index: 15;
     overflow: hidden;
+}
+
+.bal-after img {
+    padding: 0;
+}
+
+.bal-before img {
+    padding: 0;
 }
 
 .bal-before-inset {
