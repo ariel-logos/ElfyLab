@@ -14,7 +14,7 @@ Some Content about reshade.
 <div class="mainSection">
         <div id="comp{{i}}" class="bal-container">
             <div class="bal-after">
-                {% assign i = i+1 %}
+                {% assign i = i.index+1 %}
                 <img src="/ElfyLab2/img/beforeafter/{{i}}.jpg">
                 <div class="bal-afterPosition afterLabel">
                     After
