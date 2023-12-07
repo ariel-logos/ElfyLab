@@ -13,14 +13,12 @@ Some Content about reshade.
 {% for i in (0..25) %}
 <div class="mainSection">
         <div id="comp{{i}}" class="bal-container">
-        {% assign i = i+1 %}
             <div class="bal-after">
-                <img src="/ElfyLab2/img/beforeafter/{{i}}.jpg">
+                <img src="/ElfyLab2/img/beforeafter/{{i+1}}.jpg">
                 <div class="bal-afterPosition afterLabel">
                     After
                 </div>
             </div>
-        {% assign i = i-1 %}
             <div class="bal-before">
                 <div class="bal-before-inset">
                     <img src="/ElfyLab2/img/beforeafter/{{i}}.png">
@@ -29,13 +27,13 @@ Some Content about reshade.
                     </div>
                 </div>
             </div>
-        {% assign i = i+2 %}
             <div class="bal-handle">
                 <span class="handle-left-arrow"></span>
                 <span class="handle-right-arrow"></span>
             </div>
         </div>
     </div>
+ {% assign i = i+1 %}
 {% endfor %}
 
 <script src="/ElfyLab2/assets/js/imagecomparison.js"></script>
