@@ -9,21 +9,24 @@ tags: [reshade,ffxi]
 
 Some Content about reshade.
 
+{% assign startValue = 0 %}
+{% assign bef = 0 %}
+{% assign aft = 0 %}
 
-{% for i in (0..12) %}
+{% for i in (startValue..12) %}
 <div class="mainSection">
         <div id="comp{{i}}" class="bal-container">
             <div class="bal-after">
-                {% assign i = i.index+1 %}
-                <img src="/ElfyLab2/img/beforeafter/{{i}}.jpg">
+                {% assign bef = startValue | times: 2 %}
+                {% assign aft = bef | plus: 1 %}
+                <img src="/ElfyLab2/img/beforeafter/{{aft}}.jpg">
                 <div class="bal-afterPosition afterLabel">
                     After
                 </div>
             </div>
             <div class="bal-before">
                 <div class="bal-before-inset">
-                    {% assign y = (i*2) %}
-                    <img src="/ElfyLab2/img/beforeafter/{{i}}.png">
+                    <img src="/ElfyLab2/img/beforeafter/{{bef}}.png">
                     <div class="bal-beforePosition beforeLabel">
                         Before
                     </div>
