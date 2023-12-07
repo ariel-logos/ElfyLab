@@ -12,7 +12,7 @@ Some Content about reshade.
 <div class="mainSection">
         <div id="one" class="bal-container">
             <div class="bal-after">
-                <img src="/ElfyLab2/beforeafter/img/5.jpg">
+                <img src="/ElfyLab2/img/beforeafter/5.jpg">
                 <div class="bal-afterPosition afterLabel">
                     After
                 </div>
