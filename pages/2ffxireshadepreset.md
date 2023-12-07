@@ -17,7 +17,7 @@ Some Content about reshade.
 <div class="mainSection">
         <div id="comp{{i}}" class="bal-container">
             <div class="bal-after">
-                {% assign bef = startValue | times: 2 %}
+                {% assign bef = i | times: 2 %}
                 {% assign aft = bef | plus: 1 %}
                 <img src="/ElfyLab2/img/beforeafter/{{aft}}.jpg">
                 <div class="bal-afterPosition afterLabel">
