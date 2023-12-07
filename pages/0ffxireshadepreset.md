@@ -29,7 +29,7 @@ Some Content about reshade.
                 <span class="handle-left-arrow"></span>
                 <span class="handle-right-arrow"></span>
             </div>
-        </div> 
+        </div>
     </div>
 
 <script src="/ElfyLab2/assets/js/imagecomparison.js"></script>
@@ -37,6 +37,9 @@ Some Content about reshade.
 <script>
         new BeforeAfter({
             id: '#one'
+        });
+        new BeforeAfter({
+            id: '#two'
         });
 </script>
 
