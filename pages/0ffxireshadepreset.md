@@ -32,3 +32,9 @@ Some Content about reshade.
 
 <script src="{{ '/assets/js/imagecomparison.js' | relative_url }}"></script>
 
+<script>
+        new BeforeAfter({
+            id: '#one'
+        });
+</script>
+
