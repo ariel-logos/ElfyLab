@@ -48,3 +48,5 @@ Some Content about reshade.
   </div>
 </section>
  
+<link rel="stylesheet" type="text/css" href="assets/css/imagecomparison.css" media=”screen” />
+<script src=""></script>
