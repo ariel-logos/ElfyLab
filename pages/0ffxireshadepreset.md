@@ -9,7 +9,7 @@ tags: [reshade,ffxi]
 
 Some Content about reshade.
 
-<div id="example" class="bal-container">
+<div id="one" class="bal-container">
   <div class="bal-after">
     <img src="{{ '/img/beforeafter/5.jpg' | relative_url }}">
     <div class="bal-afterPosition afterLabel">
