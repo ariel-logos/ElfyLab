@@ -49,4 +49,4 @@ Some Content about reshade.
 </section>
  
 <link rel="stylesheet" type="text/css" href="assets/css/imagecomparison.css" media=”screen” />
-<script src=""></script>
+<script src="assets/js/imagecomparison.js"></script>
