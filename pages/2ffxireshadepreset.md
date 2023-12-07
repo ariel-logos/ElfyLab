@@ -15,7 +15,7 @@ Some Content about reshade.
         <div id="comp{{i}}" class="bal-container">
             <div class="bal-after">
                 {% assign i = i+1 %}
-                <img src="/ElfyLab2/img/beforeafter/{{x}}.jpg">
+                <img src="/ElfyLab2/img/beforeafter/{{i}}.jpg">
                 <div class="bal-afterPosition afterLabel">
                     After
                 </div>
@@ -23,7 +23,7 @@ Some Content about reshade.
             <div class="bal-before">
                 <div class="bal-before-inset">
                     {% assign y = (i*2) %}
-                    <img src="/ElfyLab2/img/beforeafter/{{y}}.png">
+                    <img src="/ElfyLab2/img/beforeafter/{{i}}.png">
                     <div class="bal-beforePosition beforeLabel">
                         Before
                     </div>
