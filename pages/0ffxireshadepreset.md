@@ -10,6 +10,7 @@ tags: [reshade,ffxi]
 Some Content about reshade.
 
 <div class="mainSection">
+        {% for %}
         <div id="one" class="bal-container">
             <div class="bal-after">
                 <img src="/ElfyLab2/img/beforeafter/5.jpg">
@@ -30,6 +31,7 @@ Some Content about reshade.
                 <span class="handle-right-arrow"></span>
             </div>
         </div>
+        {% endfor %}
     </div>
 
 <script src="/ElfyLab2/assets/js/imagecomparison.js"></script>
