@@ -10,18 +10,20 @@ tags: [reshade,ffxi]
 Some Content about reshade.
 
 
-{% for i in (0..25) %}
+{% for i in (0..12) %}
 <div class="mainSection">
         <div id="comp{{i}}" class="bal-container">
             <div class="bal-after">
-                <img src="/ElfyLab2/img/beforeafter/{{i+1}}.jpg">
+                {% assign x = (i*2)+1 %}
+                <img src="/ElfyLab2/img/beforeafter/{{x}}.jpg">
                 <div class="bal-afterPosition afterLabel">
                     After
                 </div>
             </div>
             <div class="bal-before">
                 <div class="bal-before-inset">
-                    <img src="/ElfyLab2/img/beforeafter/{{i}}.png">
+                    {% assign y = (i*2) %}
+                    <img src="/ElfyLab2/img/beforeafter/{{y}}.png">
                     <div class="bal-beforePosition beforeLabel">
                         Before
                     </div>
@@ -33,7 +35,6 @@ Some Content about reshade.
             </div>
         </div>
     </div>
- {% assign i = i+1 %}
 {% endfor %}
 
 <script src="/ElfyLab2/assets/js/imagecomparison.js"></script>
