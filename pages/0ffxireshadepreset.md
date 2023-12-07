@@ -32,7 +32,7 @@ Some Content about reshade.
         </div> 
     </div>
 
-<script src="/assets/js/imagecomparison.js"></script>
+<script src="assets/js/imagecomparison.js"></script>
 
 <script>
         new BeforeAfter({
