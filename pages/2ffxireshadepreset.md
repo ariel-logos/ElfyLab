@@ -39,12 +39,12 @@ Some Content about reshade.
 
 <script src="/ElfyLab2/assets/js/imagecomparison.js"></script>
 
+
 <script>
+        {% for i in (0..12) %}
         new BeforeAfter({
-            id: '#one'
+            id: '#comp{{i}}'
         });
-        new BeforeAfter({
-            id: '#two'
-        });
+        {% endfor %}
 </script>
 
