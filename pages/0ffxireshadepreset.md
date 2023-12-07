@@ -9,44 +9,26 @@ tags: [reshade,ffxi]
 
 Some Content about reshade.
 
-<section class="image-comparison" data-component="image-comparison-slider">
-  <div class="image-comparison__slider-wrapper">
-    <label for="image-comparison-range" class="image-comparison__label">Move image comparison slider</label>
-    <input type="range" min="0" max="100" value="50" class="image-comparison__range" id="image-compare-range" data-image-comparison-range="">
-    <div class="image-comparison__image-wrapper  image-comparison__image-wrapper--overlay" data-image-comparison-overlay="">
-      <figure class="image-comparison__figure image-comparison__figure--overlay">
-        <picture class="image-comparison__picture">
-          <source media="(max-width: 40em)" srcset="https://images.unsplash.com/photo-1566702580807-95611c919b47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&h=400&q=80">
-          <source media="(min-width: 40.0625em) and (max-width: 48em)" srcset="https://images.unsplash.com/photo-1566702580807-95611c919b47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&h=600&q=80">
-          <img src="https://images.unsplash.com/photo-1566702580807-95611c919b47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&h=1000&q=80" alt="Mojave desert in the sun" class="image-comparison__image">
-        </picture>
-        <figcaption class="image-comparison__caption image-comparison__caption--before">
-          <span class="image-comparison__caption-body">Before Label</span>
-        </figcaption>
-      </figure>
-    </div>
-    <div class="image-comparison__slider" data-image-comparison-slider="">
-      <span class="image-comparison__thumb" data-image-comparison-thumb="">
-        <svg class="image-comparison__thumb-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="currentColor">
-          <path class="image-comparison__thumb-icon--left" d="M12.121 4.703V.488c0-.302.384-.454.609-.24l4.42 4.214a.33.33 0 0 1 0 .481l-4.42 4.214c-.225.215-.609.063-.609-.24V4.703z"></path>
-          <path class="image-comparison__thumb-icon--right" d="M5.879 4.703V.488c0-.302-.384-.454-.609-.24L.85 4.462a.33.33 0 0 0 0 .481l4.42 4.214c.225.215.609.063.609-.24V4.703z"></path>
-        </svg>
-      </span>
-    </div>
-    <div class="image-comparison__image-wrapper">
-      <figure class="image-comparison__figure">
-        <picture class="image-comparison__picture">
-          <source media="(max-width: 40em)" srcset="https://images.unsplash.com/photo-1554110397-9bac083977c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&height=400&q=80">
-          <source media="(min-width: 40.0625em) and (max-width: 48em)" srcset="https://images.unsplash.com/photo-1554110397-9bac083977c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&height=600&q=80">
-          <img src="https://images.unsplash.com/photo-1554110397-9bac083977c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&height=1000&q=80" alt="Mojave desert in the dark" class="image-comparison__image">
-        </picture>
-        <figcaption class="image-comparison__caption image-comparison__caption--after">
-          <span class="image-comparison__caption-body">After Label</span>
-        </figcaption>
-      </figure>
+<div id="example" class="bal-container">
+  <div class="bal-after">
+    <img src="5.jpg">
+    <div class="bal-afterPosition afterLabel">
+      After
     </div>
   </div>
-</section>
+  <div class="bal-before">
+    <div class="bal-before-inset">
+    <img src="4.png">
+      <div class="bal-beforePosition beforeLabel">
+        Before
+      </div>
+    </div>
+  </div>
+  <div class="bal-handle">
+    <span class=" handle-left-arrow"></span>
+    <span class="handle-right-arrow"></span>
+  </div>
+</div>
 
 <script src="{{ '/assets/js/imagecomparison.js' | relative_url }}"></script>
 
