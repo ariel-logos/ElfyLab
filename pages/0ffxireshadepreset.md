@@ -9,28 +9,30 @@ tags: [reshade,ffxi]
 
 Some Content about reshade.
 
-<div id="one" class="bal-container">
-  <div class="bal-after">
-    <img src="{{ '/img/beforeafter/5.jpg' | relative_url }}">
-    <div class="bal-afterPosition afterLabel">
-      After
+<div class="mainSection">
+        <div id="one" class="bal-container">
+            <div class="bal-after">
+                <img src="img/5.jpg">
+                <div class="bal-afterPosition afterLabel">
+                    After
+                </div>
+            </div>
+            <div class="bal-before">
+                <div class="bal-before-inset">
+                    <img src="img/4.jpg">
+                    <div class="bal-beforePosition beforeLabel">
+                        Before
+                    </div>
+                </div>
+            </div>
+            <div class="bal-handle">
+                <span class=" handle-left-arrow"></span>
+                <span class="handle-right-arrow"></span>
+            </div>
+        </div> 
     </div>
-  </div>
-  <div class="bal-before">
-    <div class="bal-before-inset">
-    <img src="{{ '/img/beforeafter/4.png' | relative_url }}">
-      <div class="bal-beforePosition beforeLabel">
-        Before
-      </div>
-    </div>
-  </div>
-  <div class="bal-handle">
-    <span class=" handle-left-arrow"></span>
-    <span class="handle-right-arrow"></span>
-  </div>
-</div>
 
-<script src="{{ '/assets/js/imagecomparison.js' | relative_url }}"></script>
+<script src="/assets/js/imagecomparison.js"></script>
 
 <script>
         new BeforeAfter({
