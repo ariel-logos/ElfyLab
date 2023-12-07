@@ -1,4 +1,4 @@
-![1](https://github.com/ariel-logos/ElfyLab2/assets/78350872/ab9ad86d-d767-4fbf-ae71-f999df9cbee1)---
+---
 layout: page
 title: FFXI ReShade Preset
 subtitle: "This is a subtitle"  
