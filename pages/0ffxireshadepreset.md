@@ -11,14 +11,14 @@ Some Content about reshade.
 
 <div id="example" class="bal-container">
   <div class="bal-after">
-    <img src="5.jpg">
+    <img src="{{ '/img/beforeafter/5.jpg' | relative_url }}">
     <div class="bal-afterPosition afterLabel">
       After
     </div>
   </div>
   <div class="bal-before">
     <div class="bal-before-inset">
-    <img src="4.png">
+    <img src="{{ '/img/beforeafter/4.png' | relative_url }}">
       <div class="bal-beforePosition beforeLabel">
         Before
       </div>
