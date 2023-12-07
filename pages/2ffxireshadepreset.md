@@ -9,8 +9,9 @@ tags: [reshade,ffxi]
 
 Some Content about reshade.
 
+
+{% for i in (0..25) %}
 <div class="mainSection">
-        {% for i in (0..25) %}
         <div id="comp{{i}}" class="bal-container">
         {% assign i = i+1 %}
             <div class="bal-after">
@@ -34,8 +35,8 @@ Some Content about reshade.
                 <span class="handle-right-arrow"></span>
             </div>
         </div>
-        {% endfor %}
     </div>
+{% endfor %}
 
 <script src="/ElfyLab2/assets/js/imagecomparison.js"></script>
 
