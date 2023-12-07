@@ -19,7 +19,7 @@ Some Content about reshade.
             </div>
             <div class="bal-before">
                 <div class="bal-before-inset">
-                    <img src="/ElfyLab2/img/beforeafter/4.jpg">
+                    <img src="/ElfyLab2/img/beforeafter/4.png">
                     <div class="bal-beforePosition beforeLabel">
                         Before
                     </div>
