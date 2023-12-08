@@ -9,11 +9,11 @@ tags: [reshade,ffxi]
 
 Some Content about reshade.
 
-{% assign startValue = 0 %}
+{% assign nImgs = 13 %}
 {% assign bef = 0 %}
 {% assign aft = 0 %}
 
-{% for i in (0..12) %}
+{% for i in (0..nImages) %}
 <div class="mainSection">
         <div id="comp{{i}}" class="bal-container">
             <div class="bal-after">
@@ -44,7 +44,7 @@ Some Content about reshade.
 
 
 <script>
-        {% for i in (0..12) %}
+        {% for i in (0..nImages) %}
         new BeforeAfter({
             id: '#comp{{i}}'
         });
