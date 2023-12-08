@@ -12,3 +12,4 @@ Head over to the [theme's documentation](https://github.com/sylhare/Type-on-Stra
 
 This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
  
+Original template powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
