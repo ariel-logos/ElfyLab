@@ -39,7 +39,7 @@ Bonus:
   <li>Before/After from SplitScreenPlus.fx (More about this at the end)</li> 
 </ul> 
 
-<b>Download to the preset:</b> <a href="/ElfyLab/downloads/FFXI_Reshade_(by_arielfy).ini">Click to Download!</a>
+<b>Download to the preset:</b> <a href="/ElfyLab/downloads/FFXI_Reshade_(by_arielfy).ini" download>Click to Download!</a>
 
 Down here you can see some examples of comparison between No Reshade and Reshade On with my preset.
 
