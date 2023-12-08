@@ -19,14 +19,14 @@ Some Content about reshade.
             <div class="bal-after">
                 {% assign bef = i | times: 2 %}
                 {% assign aft = bef | plus: 1 %}
-                <img src="/ElfyLab2/img/beforeafter/{{aft}}.jpg">
+                <img src="/ElfyLab/img/beforeafter/{{aft}}.jpg">
                 <div class="bal-afterPosition afterLabel">
                     Reshade On
                 </div>
             </div>
             <div class="bal-before">
                 <div class="bal-before-inset">
-                    <img src="/ElfyLab2/img/beforeafter/{{bef}}.png">
+                    <img src="/ElfyLab/img/beforeafter/{{bef}}.png">
                     <div class="bal-beforePosition beforeLabel">
                         No Reshade
                     </div>
@@ -40,7 +40,7 @@ Some Content about reshade.
     </div>
 {% endfor %}
 
-<script src="/ElfyLab2/assets/js/imagecomparison.js"></script>
+<script src="/ElfyLab/assets/js/imagecomparison.js"></script>
 
 
 <script>
@@ -51,16 +51,13 @@ Some Content about reshade.
         {% endfor %}
 </script>
 
- <script>
-        // Function to handle orientation change
-        function handleOrientationChange() {
-            // Trigger a reflow by adding and removing a class
-            document.body.classList.add('trigger-reflow');
-            void document.body.offsetWidth; // Reading offsetWidth triggers the reflow
-            document.body.classList.remove('trigger-reflow');
-        }
-
+<script>
+// Function to reload the page on orientation change
+       function reloadOnOrientationChange() {
+           location.reload();
+       }
         // Attach the orientation change event listener
-        window.addEventListener('orientationchange', handleOrientationChange);
+       window.addEventListener('orientationchange', reloadOnOrientationChange);
 </script>
+
 
