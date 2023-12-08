@@ -21,14 +21,14 @@ Some Content about reshade.
                 {% assign aft = bef | plus: 1 %}
                 <img src="/ElfyLab2/img/beforeafter/{{aft}}.jpg">
                 <div class="bal-afterPosition afterLabel">
-                    After
+                    Reshade On
                 </div>
             </div>
             <div class="bal-before">
                 <div class="bal-before-inset">
                     <img src="/ElfyLab2/img/beforeafter/{{bef}}.png">
                     <div class="bal-beforePosition beforeLabel">
-                        Before
+                        No Reshade
                     </div>
                 </div>
             </div>
