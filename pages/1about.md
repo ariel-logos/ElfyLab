@@ -8,12 +8,12 @@ tags: [Page]
 
 Modern elf walking among humans and other creatures.
 
-> Computer Scientist. <br />
-> Gamer. <br />
-> 3D Artist. <br />
-> 2D? Artist. <br />
-> Professionally clumsy. <br />
-> Multiple time champion, Hall of Fame, silliness embodier. <br />
+Computer Scientist. <br />
+Gamer. <br />
+3D Artist. <br />
+2D? Artist. <br />
+Professionally clumsy. <br />
+Multiple time champion, Hall of Fame, silliness embodier. <br />
 
 
  
