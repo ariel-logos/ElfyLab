@@ -5,13 +5,13 @@ url: "https://ariel-logos.github.io"
 # THEME-SPECIFIC CONFIGURATION
 title: Elfy Lab                                   # site's title
 description: "An elven workshop with pointy ears and whatnot"      # used by search engines
-avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
+avatar: assets/img/iconElfyLab.png                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
 header_text: The Elfy Lab  # Change Blog header text
 header_feature_image: img/misc/homeImg2.png
-header_feature_image_responsive: true
+header_feature_image_responsive: false
 footer_text: 🐇
 
 # Blog
