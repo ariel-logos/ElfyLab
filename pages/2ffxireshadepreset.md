@@ -13,7 +13,7 @@ Some Content about reshade.
 {% assign bef = 0 %}
 {% assign aft = 0 %}
 
-{% for i in (0..nImages) %}
+{% for i in (0..nImgs) %}
 <div class="mainSection">
         <div id="comp{{i}}" class="bal-container">
             <div class="bal-after">
