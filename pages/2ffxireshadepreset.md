@@ -44,7 +44,7 @@ Some Content about reshade.
 
 
 <script>
-        {% for i in (0..nImages) %}
+        {% for i in (0..nImgs) %}
         new BeforeAfter({
             id: '#comp{{i}}'
         });
