@@ -51,3 +51,16 @@ Some Content about reshade.
         {% endfor %}
 </script>
 
+ <script>
+        // Function to handle orientation change
+        function handleOrientationChange() {
+            // Trigger a reflow by adding and removing a class
+            document.body.classList.add('trigger-reflow');
+            void document.body.offsetWidth; // Reading offsetWidth triggers the reflow
+            document.body.classList.remove('trigger-reflow');
+        }
+
+        // Attach the orientation change event listener
+        window.addEventListener('orientationchange', handleOrientationChange);
+</script>
+
