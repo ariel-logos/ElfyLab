@@ -12,7 +12,7 @@ The issue started for me working on my FFXI Reshade Preset project. After achiev
 However, little did I know that I had completely screwed my minimap plugin (<a href="https://git.ashitaxi.com/Plugins/Minimap/commits/commit/78e2952ff4b798410a0535a3d1b73b9ee059d6b1">repo here</a>) that due to the nature of the color of the maps it loads would act as a screen lamp effect that ended up ruining all the good progress. 🥲
 
 Here's an example of the way-too-much brightness applied on the minimap as a result of blooming:
-<div>
+<div class="custom-image-container">
   <img src="/ElfyLab/img/posts/reshadeIssue.png" height="350" />
 </div>
 
@@ -38,9 +38,11 @@ technique Before
 ```
 
 Through the ReShade menu in-game is then possible to set up the masking shape through some very self-explainatory parameters.
-<div>
+
+<div class="custom-image-container-centered">
   <img src="/ElfyLab/img/posts/ShapeMask.png" height="300" />
 </div>
+
 
 If the textcoords of a certain pixel fall inside the shape, then the sampler from the Before pass is applied.
 Otherwise, if the textcoords fall outside the shape, then the sampler simply applies the After pass without filtering the other effects.
@@ -76,7 +78,9 @@ else
 Quite easy.
 Now the real troubles begin when the UI elements you need to mask are not permament and therefore leaving the mask effect applied after they disappear.
 
-<img src="/ElfyLab/img/posts/ShapeMaskfadeOff.png" height="500" />
+<div class="custom-image-container-centered">
+  <img src="/ElfyLab/img/posts/ShapeMaskfadeOff.png" height="500" />
+</div>
 
 However, by enabling the "Fade" option (tick box in the ReShade UI picture), we can enable one more blending property in the shader that modulates, again, the before/after samplers based on the difference in color of the pixels.
 
@@ -109,8 +113,9 @@ else
 
 The result is just perfect (at least in all the areas of the game I tested so far) as you can see applied on the previous example.
 So far the fix worked perfectly in different light conditions and while moving the character and/or the camera around.
-
-<img src="/ElfyLab/img/posts/ShapeMaskfadeOn.png" height="500" />
+<div class="custom-image-container-centered">
+  <img src="/ElfyLab/img/posts/ShapeMaskfadeOn.png" height="500" />
+</div>
 
 I swear the mask effect is still enabled! 😅
 
