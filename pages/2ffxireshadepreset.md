@@ -122,10 +122,11 @@ The second preset adds more realism to the scene. To achieve that, it features e
 The limiit in pushing the effects for even better visuals is again avoiding to mess up the game UI.
 In this case, no matter how I tuned the effects, to keep the most relevant visual improvement, the minimap plugin (again for Ashita) was causing a lot of problems with bloom such as the minimap turning into a screen lamp:
 
-###### Issue vs Fix
+
 <p>
   <span>
     <img src="/ElfyLab/img/posts/reshadeIssue.png" height="250" />
+    ###### Issue - VS - Fix
     <img src="/ElfyLab/img/posts/reshadeIssueFix.png" height="250" />
   </span>
 </p>
