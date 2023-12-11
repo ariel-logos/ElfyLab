@@ -116,8 +116,10 @@ I swear the mask effect is still enabled! 😅
 
 And the final result is a fixed UI element that is allowed to disappear without interefering with the nice effects!
 
-<img src="/ElfyLab/img/posts/reshadeIssue.png" height="350" />
-<img src="/ElfyLab/img/posts/reshadeIssueFix.png" height="350" />
+<div class="custom-image-container">
+  <img src="/ElfyLab/img/posts/reshadeIssue.png" height="350" />
+  <img src="/ElfyLab/img/posts/reshadeIssueFix.png" height="350" />
+</div>
 
 Here's a link to download the ShapeMask.fx effect:
 <b>Download to ShapeMask.fx:</b> <a href="/ElfyLab/downloads/ShapeMask.fx" download>Click to Download!</a>
