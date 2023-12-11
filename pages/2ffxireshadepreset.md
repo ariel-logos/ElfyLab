@@ -115,8 +115,8 @@ If you want to see more samples from different areas you can take a look <a href
         </div>
     </div>
 
-### Preset 1
-##### (for limited GPU power)
+### Preset 2
+##### (for maximum quality)
 <br/>
 The second preset adds more realism to the scene. To achieve that, it features effects based on RT techniques and therefore it's more taxing on your GPU. However, for mig-high GPU range (I'm working with a RX 6800 XT at the time of this post) it should be able to stay around the 60fps limit, provided you are making use of the fps addon for Ashita or equivalent for Windower.
 The limiit in pushing the effects for even better visuals is again avoiding to mess up the game UI.
@@ -156,14 +156,14 @@ If you want to see more samples from different areas you can take a look <a href
 <div class="mainSection">
         <div id="comp4" class="bal-container">
             <div class="bal-after">
-                <img src="/ElfyLab/img/beforeafter/1.jpg">
+                <img src="/ElfyLab/img/beforeafter/29.jpg">
                 <div class="bal-afterPosition afterLabel">
                     Reshade On
                 </div>
             </div>
             <div class="bal-before">
                 <div class="bal-before-inset">
-                    <img src="/ElfyLab/img/beforeafter/0.png">
+                    <img src="/ElfyLab/img/beforeafter/28.png">
                     <div class="bal-beforePosition beforeLabel">
                         No Reshade
                     </div>
@@ -178,14 +178,14 @@ If you want to see more samples from different areas you can take a look <a href
 <div class="mainSection">
         <div id="comp5" class="bal-container">
             <div class="bal-after">
-                <img src="/ElfyLab/img/beforeafter/5.jpg">
+                <img src="/ElfyLab/img/beforeafter/33.jpg">
                 <div class="bal-afterPosition afterLabel">
                     Reshade On
                 </div>
             </div>
             <div class="bal-before">
                 <div class="bal-before-inset">
-                    <img src="/ElfyLab/img/beforeafter/4.png">
+                    <img src="/ElfyLab/img/beforeafter/32.png">
                     <div class="bal-beforePosition beforeLabel">
                         No Reshade
                     </div>
@@ -200,14 +200,14 @@ If you want to see more samples from different areas you can take a look <a href
 <div class="mainSection">
     <div id="comp6" class="bal-container">
         <div class="bal-after">
-                <img src="/ElfyLab/img/beforeafter/27.jpg">
+                <img src="/ElfyLab/img/beforeafter/41.jpg">
                 <div class="bal-afterPosition afterLabel">
                     Reshade On
                 </div>
             </div>
             <div class="bal-before">
                 <div class="bal-before-inset">
-                    <img src="/ElfyLab/img/beforeafter/26.png">
+                    <img src="/ElfyLab/img/beforeafter/40.png">
                     <div class="bal-beforePosition beforeLabel">
                         No Reshade
                     </div>
