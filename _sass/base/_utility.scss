@@ -102,15 +102,17 @@ a.button {
   float: right;
 }
 
-
-
-.custom-image-container {
-  justify-content: flex-start;
-  align-content: flex-start;
-}
-
 .custom-image-container img {
   padding-right: 0px;
   padding-left: 10px;
 }
 
+.custom-image-container-centered {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.custom-image-container-centered img {
+  padding: 0;
+}
