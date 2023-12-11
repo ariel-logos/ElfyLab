@@ -23,15 +23,18 @@
           {% if site.excerpt or site.theme_settings.excerpt %}
               <div class="excerpt">
                   {% if site.excerpt == "truncate" %}
+                                <p>I'm about to add post in truncate branch</p>
                      {{ post.content | strip_html | truncate: '250' | escape }}
+                                <p>ending post in truncate branch</p>
                   {% else %}
+                                <p>I'm about to add post in non-truncate branch</p>
                      {{ post.excerpt | strip_html | escape }}
+                                <p>>ending post in non-truncate branch</p>
                   {% endif %}
               </div>
           {% endif %}
           <div style="padding-top:20px;">
             <p>{{site.excerpt}}</p>
-            <p>{{site.theme_settings.excerpt}}</p>
             <a href="{{ post.url | relative_url }}">[Continue Reading... 🐰]</a>
           </div>
       </span>
