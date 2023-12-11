@@ -124,7 +124,7 @@ In this case, no matter how I tuned the effects, to keep the most relevant visua
 
 ###### Issue VS Fix
 <p>
-  <span style="float:left;">
+  <span style="display: inline-block;text-align: left;">
     <img src="/ElfyLab/img/posts/reshadeIssue.png" height="250" />
     <img src="/ElfyLab/img/posts/reshadeIssueFix.png" height="250" />
   </span>
