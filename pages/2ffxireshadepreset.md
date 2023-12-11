@@ -122,32 +122,46 @@ The second preset adds more realism to the scene. To achieve that, it features e
 The limiit in pushing the effects for even better visuals is again avoiding to mess up the game UI.
 In this case, no matter how I tuned the effects, to keep the most relevant visual improvement, the minimap plugin (again for Ashita) was causing a lot of problems such as:
 <div>
-	 <img src="/ElfyLab/img/minimapIssue.jpg">
+	 <img src="/ElfyLab/img/reshadeIssue.png">
+	 <div class="bal-beforePosition beforeLabel">
+            Unfxied
+         </div>
+	 <img src="/ElfyLab/img/reshadeIssueFix.png">
+	 <div class="bal-beforePosition beforeLabel">
+            Fixed
+         </div>
 </div>
 To fix this issue I coded an extra effect (ShapeMask.fx) properly discussed <a href="somepost">here</a>.
 In short, it prevents the minimap from being affected by most of the other effects and it "activates" only when the minimap shows up (in case you want to use the minimapmon addon for the auto-hide feature).
 
 The effects currently in use in this preset are the following:
 <ul>
-  <li>SMAA.fx</li>
-  <li>CAS.fx</li>
-  <li>Depth_cues.fx</li>
+  <li>qUINT_ssr.fx</li>
+  <li>NGLighting.fx</li>
   <li>FakeHDR.fx</li>
-  <li>DPX.fx</li>   
-  <li>Vignette.fx</li>  
-  <li>Levels.fx</li>
+  <li>Depth_Cues.fx</li>
   <li>Tonemap.fx</li>
-  <li>BloomingHDR.fx</li> 
+  <li>DPX.fx</li>
+  <li>BloomingHDR.fx</li>
+  <li>PD80_02_Bloom.fx</li>
+  <li>MagicHDR.fx</li>
   <li>Vibrance.fx</li>
   <li>Clarity.fx</li>
   <li>LumaSharpen.fx</li>
   <li>Technicolor2.fx</li>
-  <li>RadiantGI.fx</li>   
-  <li>GloomAO.fx</li>  
-  <li>Sepia.fx</li>
+  <li>GloomAO.fx</li>
+  <li>MartyMods_MXAO.fx</li>
   <li>DLAA_Plus.fx</li>
+  <li>qUINT_MXAO.fx</li>
+  <li>PD80_02_Cinetcols_LUT.fx</li>
+  <li>LocalContrastCS.fx</li>
+  <li>Sepia.fx</li>
+  <li>ArtisticVignette.fx</li>
 </ul> 
-
+Bonus: 
+<ul>
+  <li>ShapeMask.fx (Read below)</li>
+</ul>
 <b>Download to the preset:</b> <a href="/ElfyLab/downloads/FFXI_Reshade2_(by_arielfy).ini" download>Click to Download!</a>
 
 Down here you can see some examples of comparison between No Reshade and Reshade On with this second preset.
