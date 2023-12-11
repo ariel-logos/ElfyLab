@@ -122,13 +122,13 @@ The second preset adds more realism to the scene. To achieve that, it features e
 The limiit in pushing the effects for even better visuals is again avoiding to mess up the game UI.
 In this case, no matter how I tuned the effects, to keep the most relevant visual improvement, the minimap plugin (again for Ashita) was causing a lot of problems with bloom such as the minimap turning into a screen lamp:
 
-<div>
-  ######Issue vs Fix
+###### Issue vs Fix
+<p>
   <span>
-    <img src="/ElfyLab/img/posts/reshadeIssue.png" height="350" />
-    <img src="/ElfyLab/img/posts/reshadeIssueFix.png" height="350" />
+    <img src="/ElfyLab/img/posts/reshadeIssue.png" height="250" />
+    <img src="/ElfyLab/img/posts/reshadeIssueFix.png" height="250" />
   </span>
-</div>
+</p>
 
 To fix this issue I coded an extra effect (ShapeMask.fx) properly discussed <a href="somepost">here</a>.
 In short, it prevents the minimap from being affected by most of the other effects and it "activates" only when the minimap shows up (in case you want to use the minimapmon addon for the auto-hide feature).
@@ -247,9 +247,6 @@ If you want to see more samples from different areas you can take a look <a href
         });
         new BeforeAfter({
             id: '#comp3'
-        });
-	new BeforeAfter({
-            id: 'issue'
         });
 	new BeforeAfter({
             id: '#comp4'
