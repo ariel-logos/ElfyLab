@@ -124,8 +124,8 @@ In this case, no matter how I tuned the effects, to keep the most relevant visua
 
 ###### Issue VS Fix
 <div class="custom-image-container">
-    <img src="/ElfyLab/img/posts/reshadeIssue.png" height="250" />
-    <img src="/ElfyLab/img/posts/reshadeIssueFix.png" height="250" />
+    <img src="/ElfyLab/img/posts/reshadeIssue.png" style="max-height: 500px;" />
+    <img src="/ElfyLab/img/posts/reshadeIssueFix.png" style="max-height: 500px;" />
 </div>
 
 To fix this issue I coded an extra effect (ShapeMask.fx) properly discussed <a href="../2023/12/11/save-your-ui.html">here</a>.
