@@ -19,7 +19,7 @@ In this page you can find the full list of samples for the <b>Preset 2</b>.
             <div class="bal-after">
                 {% assign bef = i | times: 2 %}
                 {% assign aft = bef | plus: 1 %}
-                <img src="/ElfyLab/img/beforeafter/{{aft}}.jpg">
+                <img src="/ElfyLab/img/beforeafter/{{aft}}.png">
                 <div class="bal-afterPosition afterLabel">
                     Reshade On
                 </div>
