@@ -21,14 +21,14 @@ In this page you can find the full list of samples for the <b>Preset 2</b>.
                 {% assign aft = bef | plus: 1 %}
                 <img src="/ElfyLab/img/beforeafter/{{aft}}.png">
                 <div class="bal-afterPosition afterLabel">
-                    Reshade On
+                    ReShade On
                 </div>
             </div>
             <div class="bal-before">
                 <div class="bal-before-inset">
                     <img src="/ElfyLab/img/beforeafter/{{bef}}.png">
                     <div class="bal-beforePosition beforeLabel">
-                        No Reshade
+                        No ReShade
                     </div>
                 </div>
             </div>
