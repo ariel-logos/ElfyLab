@@ -73,3 +73,7 @@ So we add a lerp function to blend the two samplers in an area around the margin
             }
 ```
 Quite easy.
+Now the real troubles begin when the UI elements you need to mask are not permament and therefore leaving the mask effect applied after they disappear.
+
+<img src="/ElfyLab/posts/ShapeMaskfadeOff.png" width="500" />
+
