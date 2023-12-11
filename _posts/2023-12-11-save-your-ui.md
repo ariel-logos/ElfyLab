@@ -9,7 +9,7 @@ Hello everyone!
 Today I'll share with you my new fx for ReShade aimed at protecting portion of your screen from those wonderful bloom effects available in many ReShade repositories.
 
 The issue started for me working on my FFXI Reshade Preset project. After achieving some very nice results with the combination of many effects it was time to wrap it up.
-However, little did I know that I had completely screwed my minimap plugin (<a href="https://git.ashitaxi.com/Plugins/Minimap/commits/commit/78e2952ff4b798410a0535a3d1b73b9ee059d6b1">repo here</a>) that due to the nature of the color of the maps it loads would act as a screen lamp effect that ended up ruining all the good progress. 🥲
+However, little did I know that I had completely screwed my minimap plugin (<a href="https://git.ashitaxi.com/Plugins/Minimap/commits/commit/78e2952ff4b798410a0535a3d1b73b9ee059d6b1" target="_blank">repo here</a>) that due to the nature of the color of the maps it loads would act as a screen lamp effect that ended up ruining all the good progress. 🥲
 
 Here's an example of the way-too-much brightness applied on the minimap as a result of blooming:
 <div class="custom-image-container-centered">
