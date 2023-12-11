@@ -15,9 +15,9 @@ Gamer. <br />
 Professionally clumsy. <br />
 Multiple time champion, Hall of Fame, silliness embodier. <br />
 
-<p style="text-align:center">
-  <h4>RL RPG Card</h4>
-<p>
+
+<h4 style="text-align:center">RL RPG Card</h4>
+
 <div class="custom-image-container-centered">
   <img src="/ElfyLab/img/misc/rpgCard.png" max-height="400px">
 </div>
