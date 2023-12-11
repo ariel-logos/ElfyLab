@@ -121,16 +121,29 @@ If you want to see more samples from different areas you can take a look <a href
 The second preset adds more realism to the scene. To achieve that, it features effects based on RT techniques and therefore it's more taxing on your GPU. However, for mig-high GPU range (I'm working with a RX 6800 XT at the time of this post) it should be able to stay around the 60fps limit, provided you are making use of the fps addon for Ashita or equivalent for Windower.
 The limiit in pushing the effects for even better visuals is again avoiding to mess up the game UI.
 In this case, no matter how I tuned the effects, to keep the most relevant visual improvement, the minimap plugin (again for Ashita) was causing a lot of problems with bloom such as the minimap turning into a screen lamp:
-<div>
-	 <img src="/ElfyLab/img/posts/reshadeIssue.png">
-	 <div class="bal-beforePosition beforeLabel">
-            Unfxied
-         </div>
-	 <img src="/ElfyLab/img/posts/reshadeIssueFix.png">
-	 <div class="bal-beforePosition beforeLabel">
-            Fixed
-         </div>
-</div>
+<div class="mainSection">
+    <div id="issue" class="bal-container">
+        <div class="bal-after">
+                <img src="/ElfyLab/img/posts/reshadeIssueFix.png" height="350">
+                <div class="bal-afterPosition afterLabel">
+                    Fixed
+                </div>
+            </div>
+            <div class="bal-before">
+                <div class="bal-before-inset">
+                    <img src="/ElfyLab/posts/reshadeIssue.png" height="350" />
+                    <div class="bal-beforePosition beforeLabel">
+                        Unfixed
+                    </div>
+                </div>
+            </div>
+            <div class="bal-handle">
+                <span class="handle-left-arrow"></span>
+                <span class="handle-right-arrow"></span>
+            </div>
+        </div>
+    </div>
+
 To fix this issue I coded an extra effect (ShapeMask.fx) properly discussed <a href="somepost">here</a>.
 In short, it prevents the minimap from being affected by most of the other effects and it "activates" only when the minimap shows up (in case you want to use the minimapmon addon for the auto-hide feature).
 
@@ -248,6 +261,9 @@ If you want to see more samples from different areas you can take a look <a href
         });
         new BeforeAfter({
             id: '#comp3'
+        });
+	new BeforeAfter({
+            id: 'issue'
         });
 	new BeforeAfter({
             id: '#comp4'
