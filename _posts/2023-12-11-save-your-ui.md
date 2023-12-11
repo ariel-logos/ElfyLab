@@ -13,7 +13,7 @@ However, little did I know that I had completely screwed my minimap plugin (<a h
 
 Here's an example of the way-too-much brightness applied on the minimap as a result of blooming:
 <div class="custom-image-container-centered">
-  <img src="/ElfyLab/img/posts/reshadeIssue.png" max-height="350" />
+  <img src="/ElfyLab/img/posts/reshadeIssue.png" max-height="350px" />
 </div>
 
 So instead of tuning down all the effects in order to somewhat save the minimap, I decided to develop a simple effect that masks a portion of the screen from a series of of effects that can be definied by the usual Before/After paradigm.
@@ -40,7 +40,7 @@ technique Before
 Through the ReShade menu in-game is then possible to set up the masking shape through some very self-explainatory parameters.
 
 <div class="custom-image-container-centered">
-  <img src="/ElfyLab/img/posts/ShapeMask.png" max-height="300" />
+  <img src="/ElfyLab/img/posts/ShapeMask.png" max-height="300px" />
 </div>
 
 
@@ -79,7 +79,7 @@ Quite easy.
 Now the real troubles begin when the UI elements you need to mask are not permament and therefore leaving the mask effect applied after they disappear.
 
 <div class="custom-image-container-centered">
-  <img src="/ElfyLab/img/posts/ShapeMaskfadeOff.png" max-height="500" />
+  <img src="/ElfyLab/img/posts/ShapeMaskfadeOff.png" max-height="500px" />
 </div>
 
 However, by enabling the "Fade" option (tick box in the ReShade UI picture), we can enable one more blending property in the shader that modulates, again, the before/after samplers based on the difference in color of the pixels.
@@ -114,7 +114,7 @@ else
 The result is just perfect (at least in all the areas of the game I tested so far) as you can see applied on the previous example.
 So far the fix worked perfectly in different light conditions and while moving the character and/or the camera around.
 <div class="custom-image-container-centered">
-  <img src="/ElfyLab/img/posts/ShapeMaskfadeOn.png" max-height="500" />
+  <img src="/ElfyLab/img/posts/ShapeMaskfadeOn.png" max-height="500px" />
 </div>
 
 I swear the mask effect is still enabled! 😅
@@ -122,8 +122,8 @@ I swear the mask effect is still enabled! 😅
 And the final result is a fixed UI element that is allowed to disappear without interefering with the nice effects!
 <div class="custom-image-container-centered">
 	<div class="custom-image-container">
-  	  <img src="/ElfyLab/img/posts/reshadeIssue.png" max-height="350" />
- 	  <img src="/ElfyLab/img/posts/reshadeIssueFix.png" max-height="350" />
+  	  <img src="/ElfyLab/img/posts/reshadeIssue.png" max-height="350px" />
+ 	  <img src="/ElfyLab/img/posts/reshadeIssueFix.png" max-height="350px" />
 	</div>	
 </div>
 
