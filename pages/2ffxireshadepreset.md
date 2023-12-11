@@ -123,9 +123,10 @@ The limiit in pushing the effects for even better visuals is again avoiding to m
 In this case, no matter how I tuned the effects, to keep the most relevant visual improvement, the minimap plugin (again for Ashita) was causing a lot of problems with bloom such as the minimap turning into a screen lamp:
 
 <div>
+  ######Issue vs Fix
   <span>
-    <img src="/ElfyLab/img/posts/reshadeIssueFix.png" height="350">
-    <img src="/ElfyLab/posts/reshadeIssue.png" height="350" />
+    <img src="/ElfyLab/img/posts/reshadeIssue.png" height="350" />
+    <img src="/ElfyLab/img/posts/reshadeIssueFix.png" height="350" />
   </span>
 </div>
 
