@@ -17,7 +17,7 @@ Multiple time champion, Hall of Fame, silliness embodier. <br />
 
 #### RL RPG Card
 <div class="custom-image-container-centered">
-  <img src="rpgCard.png">
+  <img src="/ElfyLab/img/misc/rpgCard.png">
 </div>
 
 
