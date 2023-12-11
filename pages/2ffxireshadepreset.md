@@ -45,7 +45,7 @@ The effects currently in use in this preset are the following:
 
 <b>Download to the preset:</b> <a href="/ElfyLab/downloads/FFXI_Reshade_(by_arielfy).ini" download>Click to Download!</a>
 
-Down here you can see some examples of comparison between No Reshade and Reshade On with this first preset.
+Down here you can see some examples of comparison between No ReShade and ReShade On with this first preset.
 If you want to see more samples from different areas you can take a look <a href="preset1preview/">here</a>.
 
 <div class="mainSection">
@@ -53,14 +53,14 @@ If you want to see more samples from different areas you can take a look <a href
             <div class="bal-after">
                 <img src="/ElfyLab/img/beforeafter/1.jpg">
                 <div class="bal-afterPosition afterLabel">
-                    Reshade On
+                    ReShade On
                 </div>
             </div>
             <div class="bal-before">
                 <div class="bal-before-inset">
                     <img src="/ElfyLab/img/beforeafter/0.png">
                     <div class="bal-beforePosition beforeLabel">
-                        No Reshade
+                        No ReShade
                     </div>
                 </div>
             </div>
@@ -75,14 +75,14 @@ If you want to see more samples from different areas you can take a look <a href
             <div class="bal-after">
                 <img src="/ElfyLab/img/beforeafter/5.jpg">
                 <div class="bal-afterPosition afterLabel">
-                    Reshade On
+                    ReShade On
                 </div>
             </div>
             <div class="bal-before">
                 <div class="bal-before-inset">
                     <img src="/ElfyLab/img/beforeafter/4.png">
                     <div class="bal-beforePosition beforeLabel">
-                        No Reshade
+                        No ReShade
                     </div>
                 </div>
             </div>
@@ -97,14 +97,14 @@ If you want to see more samples from different areas you can take a look <a href
         <div class="bal-after">
                 <img src="/ElfyLab/img/beforeafter/27.jpg">
                 <div class="bal-afterPosition afterLabel">
-                    Reshade On
+                    ReShade On
                 </div>
             </div>
             <div class="bal-before">
                 <div class="bal-before-inset">
                     <img src="/ElfyLab/img/beforeafter/26.png">
                     <div class="bal-beforePosition beforeLabel">
-                        No Reshade
+                        No ReShade
                     </div>
                 </div>
             </div>
@@ -161,7 +161,7 @@ Bonus:
 </ul>
 <b>Download to the preset:</b> <a href="/ElfyLab/downloads/FFXI_Reshade2_(by_arielfy).ini" download>Click to Download!</a>
 
-Down here you can see some examples of comparison between No Reshade and Reshade On with this second preset.
+Down here you can see some examples of comparison between No ReShade and ReShade On with this second preset.
 If you want to see more samples from different areas you can take a look <a href="preset2preview/">here</a>.
 
 <div class="mainSection">
@@ -169,14 +169,14 @@ If you want to see more samples from different areas you can take a look <a href
             <div class="bal-after">
                 <img src="/ElfyLab/img/beforeafter/29.png">
                 <div class="bal-afterPosition afterLabel">
-                    Reshade On
+                    ReShade On
                 </div>
             </div>
             <div class="bal-before">
                 <div class="bal-before-inset">
                     <img src="/ElfyLab/img/beforeafter/28.png">
                     <div class="bal-beforePosition beforeLabel">
-                        No Reshade
+                        No ReShade
                     </div>
                 </div>
             </div>
@@ -191,14 +191,14 @@ If you want to see more samples from different areas you can take a look <a href
             <div class="bal-after">
                 <img src="/ElfyLab/img/beforeafter/33.png">
                 <div class="bal-afterPosition afterLabel">
-                    Reshade On
+                    ReShade On
                 </div>
             </div>
             <div class="bal-before">
                 <div class="bal-before-inset">
                     <img src="/ElfyLab/img/beforeafter/32.png">
                     <div class="bal-beforePosition beforeLabel">
-                        No Reshade
+                        No ReShade
                     </div>
                 </div>
             </div>
@@ -213,7 +213,7 @@ If you want to see more samples from different areas you can take a look <a href
         <div class="bal-after">
                 <img src="/ElfyLab/img/beforeafter/41.png">
                 <div class="bal-afterPosition afterLabel">
-                    Reshade On
+                    ReShade On
                 </div>
             </div>
             <div class="bal-before">
