@@ -24,6 +24,7 @@
               <div class="excerpt">
                   {% if site.excerpt == "truncate" %}
                      {{ post.content | strip_html | truncate: '250' | escape }}
+                  <br /> <a href="{{ post.url | relative_url }}">[Continue Reading... 🐰]</a>
                   {% else %}
                      {{ post.excerpt | strip_html | escape }}
                   {% endif %}
