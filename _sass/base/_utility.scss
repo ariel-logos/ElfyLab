@@ -105,12 +105,7 @@ a.button {
 
 
 .custom-image-container {
-  display: inline-block;
-  text-align: left;
-}
-
-.custom-image-container img {
-  vertical-align: middle; 
-  margin-right: 5px;
+  justify-content: flex-start;
+  align-content: flex-start;
 }
 
