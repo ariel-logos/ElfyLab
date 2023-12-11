@@ -68,6 +68,8 @@ If you want to see more samples from different areas take a look <a href="preset
                 <span class="handle-right-arrow"></span>
             </div>
         </div>
+        </div>
+        <div class="mainSection">
         <div id="comp2" class="bal-container">
             <div class="bal-after">
                 <img src="/ElfyLab/img/beforeafter/5.jpg">
@@ -88,6 +90,8 @@ If you want to see more samples from different areas take a look <a href="preset
                 <span class="handle-right-arrow"></span>
             </div>
         </div>
+        </div>
+        <div class="mainSection">
         <div id="comp3" class="bal-container">
             <div class="bal-after">
                 <img src="/ElfyLab/img/beforeafter/27.jpg">
