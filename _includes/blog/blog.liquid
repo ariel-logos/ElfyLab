@@ -29,11 +29,11 @@
                   {% endif %}
               </div>
           {% endif %}
-          {% if site.excerpt == "truncate" %}
           <div style="padding-top:20px;">
+            <p>{{site.excerpt}}</p>
+            <p>{{site.theme_settings.excerpt}}</p>
             <a href="{{ post.url | relative_url }}">[Continue Reading... 🐰]</a>
           </div>
-          {% endif %}
       </span>
       
     </div>
