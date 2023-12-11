@@ -156,7 +156,7 @@ If you want to see more samples from different areas you can take a look <a href
 <div class="mainSection">
         <div id="comp4" class="bal-container">
             <div class="bal-after">
-                <img src="/ElfyLab/img/beforeafter/29.jpg">
+                <img src="/ElfyLab/img/beforeafter/29.png">
                 <div class="bal-afterPosition afterLabel">
                     Reshade On
                 </div>
@@ -178,7 +178,7 @@ If you want to see more samples from different areas you can take a look <a href
 <div class="mainSection">
         <div id="comp5" class="bal-container">
             <div class="bal-after">
-                <img src="/ElfyLab/img/beforeafter/33.jpg">
+                <img src="/ElfyLab/img/beforeafter/33.png">
                 <div class="bal-afterPosition afterLabel">
                     Reshade On
                 </div>
@@ -200,7 +200,7 @@ If you want to see more samples from different areas you can take a look <a href
 <div class="mainSection">
     <div id="comp6" class="bal-container">
         <div class="bal-after">
-                <img src="/ElfyLab/img/beforeafter/41.jpg">
+                <img src="/ElfyLab/img/beforeafter/41.png">
                 <div class="bal-afterPosition afterLabel">
                     Reshade On
                 </div>
