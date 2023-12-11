@@ -15,11 +15,12 @@ Gamer. <br />
 Professionally clumsy. <br />
 Multiple time champion, Hall of Fame, silliness embodier. <br />
 
-#### RL RPG Card
+
 <div class="custom-image-container-centered">
+  <h4>RL RPG Card</h4>
   <img src="/ElfyLab/img/misc/rpgCard.png">
 </div>
 
 
- 
+<br><br><br> 
 Original template powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
