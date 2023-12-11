@@ -39,7 +39,7 @@ technique Before
 
 Through the ReShade menu in-game is then possible to set up the masking shape through some very self-explainatory parameters.
 <div>
-  <img src="/ElfyLab/img/posts/ShapeMask.png" height="600" />
+  <img src="/ElfyLab/img/posts/ShapeMask.png" height="300" />
 </div>
 
 If the textcoords of a certain pixel fall inside the shape, then the sampler from the Before pass is applied.
@@ -76,7 +76,7 @@ else
 Quite easy.
 Now the real troubles begin when the UI elements you need to mask are not permament and therefore leaving the mask effect applied after they disappear.
 
-<img src="/ElfyLab/img/posts/ShapeMaskfadeOff.png" height="600" />
+<img src="/ElfyLab/img/posts/ShapeMaskfadeOff.png" height="500" />
 
 However, by enabling the "Fade" option (tick box in the ReShade UI picture), we can enable one more blending property in the shader that modulates, again, the before/after samplers based on the difference in color of the pixels.
 
@@ -110,7 +110,7 @@ else
 The result is just perfect (at least in all the areas of the game I tested so far) as you can see applied on the previous example.
 So far the fix worked perfectly in different light conditions and while moving the character and/or the camera around.
 
-<img src="/ElfyLab/img/posts/ShapeMaskfadeOn.png" height="600" />
+<img src="/ElfyLab/img/posts/ShapeMaskfadeOn.png" height="500" />
 
 I swear the mask effect is still enabled! 😅
 
