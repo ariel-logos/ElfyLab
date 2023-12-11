@@ -128,7 +128,7 @@ In this case, no matter how I tuned the effects, to keep the most relevant visua
     <img src="/ElfyLab/img/posts/reshadeIssueFix.png" height="250" />
 </div>
 
-To fix this issue I coded an extra effect (ShapeMask.fx) properly discussed <a href="somepost">here</a>.
+To fix this issue I coded an extra effect (ShapeMask.fx) properly discussed <a href="../2023/12/11/save-your-ui.html">here</a>.
 In short, it prevents the minimap from being affected by most of the other effects and it "activates" only when the minimap shows up (in case you want to use the minimapmon addon for the auto-hide feature).
 
 The effects currently in use in this preset are the following:
