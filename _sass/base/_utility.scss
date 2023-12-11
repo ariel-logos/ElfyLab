@@ -96,6 +96,21 @@ a.button {
   text-align: center;
 }
 
+
+
 .right {
   float: right;
 }
+
+
+
+.custom-image-container {
+  display: inline-block;
+  text-align: left;
+}
+
+.custom-image-container img {
+  vertical-align: middle; 
+  margin-right: 5px;
+}
+
