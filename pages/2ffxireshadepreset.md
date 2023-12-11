@@ -14,7 +14,14 @@ The goal in mind working on this was to achieve a significant improvement on the
 While I consider this still a work-in-progress, I'm ready to share the results achieved so far.
 As more sginificant improvements will be made, I will update the preset available on this page.
 
-The effects currently in use are the following:
+### Preset 1
+##### (for limited GPU power)
+
+The first preset I'll be discussing is meant for people who don't want to add any burdening computational load in the rendering of their game.
+The preset doesn't use many effects that need more than single passes or, for each pixel, to constantly check the sourrounding ones for additional data.
+Despite this limitation the final result is clearly some relevant improvement compared to the base game rendering.
+
+The effects currently in use in this preset are the following:
 <ul>
   <li>SMAA.fx</li>
   <li>CAS.fx</li>
@@ -35,14 +42,10 @@ The effects currently in use are the following:
   <li>DLAA_Plus.fx</li>
 </ul> 
 
-Bonus:
-<ul> 
-  <li>Before/After from SplitScreenPlus.fx (More about this at the end)</li> 
-</ul> 
-
 <b>Download to the preset:</b> <a href="/ElfyLab/downloads/FFXI_Reshade_(by_arielfy).ini" download>Click to Download!</a>
 
-Down here you can see some examples of comparison between No Reshade and Reshade On with my preset.
+Down here you can see some examples of comparison between No Reshade and Reshade On with the preset.
+If you want to see more samples from different areas take a look <a href="ElfyLab/ffxireshadepreset/preset1preview">here</a>.
 
 {% assign nImgs = 13 %}
 {% assign bef = 0 %}
