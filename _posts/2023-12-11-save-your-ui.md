@@ -12,7 +12,7 @@ The issue started for me working on my FFXI Reshade Preset project. After achiev
 However, little did I know that I had completely screwed my minimap plugin (<a href="https://git.ashitaxi.com/Plugins/Minimap/commits/commit/78e2952ff4b798410a0535a3d1b73b9ee059d6b1">repo here</a>) that due to the nature of the color of the maps it loads would act as a screen lamp effect that ended up ruining all the good progress. 🥲
 
 Here's an example of the way-too-much brightness applied on the minimap as a result of blooming:
-<div class="custom-image-container">
+<div class="custom-image-container-centered">
   <img src="/ElfyLab/img/posts/reshadeIssue.png" height="350" />
 </div>
 
@@ -120,10 +120,11 @@ So far the fix worked perfectly in different light conditions and while moving t
 I swear the mask effect is still enabled! 😅
 
 And the final result is a fixed UI element that is allowed to disappear without interefering with the nice effects!
-
-<div class="custom-image-container">
-  <img src="/ElfyLab/img/posts/reshadeIssue.png" height="350" />
-  <img src="/ElfyLab/img/posts/reshadeIssueFix.png" height="350" />
+<div class="custom-image-container-centered">
+	<div class="custom-image-container">
+  	  <img src="/ElfyLab/img/posts/reshadeIssue.png" height="350" />
+ 	  <img src="/ElfyLab/img/posts/reshadeIssueFix.png" height="350" />
+	</div>	
 </div>
 
 Here's a link to download the ShapeMask.fx effect:
