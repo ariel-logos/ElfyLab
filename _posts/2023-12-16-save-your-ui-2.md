@@ -61,14 +61,14 @@ Now let's dive in the actual step-by-step guide.
   <img src="/ElfyLab/img/posts/ShaderTogglerGroups.png" style="max-height: 50px" />
 </div>
 <br>
-<ol start="2">
+<ol start="3">
 	<li>Set the new entry to Active by ticking the relative box. You can optionally rename this group by clicking on <p style="color:MediumSeaGreen;">Edit</p>, but for the next step just click on <p style="color:MediumSeaGreen;">Settings</p>.</li>
 </ol>
 <div class="custom-image-container-centered">
   <img src="/ElfyLab/img/posts/ShaderTogglerEntry.png" style="max-height: 100px" />
 </div>
 <br>
-<ol start="3">
+<ol start="4">
 	<li>In the newly opened window, you want to uncheck the <p style="color:MediumSeaGreen;">Catch all techniques</p> box.</li>
 	<li>Now you can proceed to enable just the effects that you want to "mask" from the UI. After this step this is my situation:</li>
 </ol>
@@ -76,7 +76,7 @@ Now let's dive in the actual step-by-step guide.
   <img src="/ElfyLab/img/posts/ShaderTogglerEffects.png" style="max-height: 350px" />
 </div>
 <br>
-<ol start="4">
+<ol start="6">
 	<li>You now want to browse the column on the left of the window and go through the list of addresses one by one (single click to select) while paying attention at the "preview" box at the bottom of the window.</li>
 	<li>What you are looking for is the address that will show in the preview the application/game rendered without the UI elements you prepared in step 0. So something like the example below on the left as opposed to the right one.</li>
 </ol>
@@ -87,7 +87,7 @@ Now let's dive in the actual step-by-step guide.
 	</div>
 </div>
 <br>
-<ol start="6">
+<ol start="8">
 	<li>Peek at the application/game in the background to make sure the effects you want to mask are now being masked correctly.</li>
 	<li>Now simply double-click the pixel shader address to actually "attach" the group to it.</li>
 	<li>Close the window and remember to click on <p style="color:MediumSeaGreen;">Save all Toggle Groups</p>.</li>

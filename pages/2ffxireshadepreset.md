@@ -7,7 +7,10 @@ permalink: /ffxireshadepreset/         # Set a permalink your your page
 hide: false                           # Prevent the page title to appear in the navbar
 tags: [reshade,ffxi]
 ---
-
+<div class="custom-update-block">
+<h6> Status: Work In Progress</h6><h6> Last Update: 11/12/2023</h6>
+</div>
+<br>
 As a die-hard FFXI player, I invested more than I should have in tuning effects on ReShade in order to create a reasnoably good preset.
 The goal in mind working on this was to achieve a significant improvement on the final image without messing up the UI layer and specific areas with already very strong effects.
 
