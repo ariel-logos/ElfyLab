@@ -4,7 +4,7 @@ title: React in time to skills with SkillWatch!
 
 tags: [FFXI, add-on]
 ---
-
+<p>
 Skillwatch is an add-on for FFXI's third-party loader and hook Ashita (<a href="https://www.ashitaxi.com/" target"_blank">https://www.ashitaxi.com/</a>).
 Very simply, the purpose of this add-on is to have a clearer way to identify the moment when enemy mobs "ready" a skill.
 This could be useful in a variety of situations, for example, when people are playing with relevant ping issues or the time window to react to such event is in general too short.
@@ -22,6 +22,8 @@ It is also possible to just display the filtered skills (very useful to target s
 The overlay has different visual options such as size adjustment, repositioning, blinking color, etc.
 
 ![Overlay1](./../img/overlay1fixed.gif)  | ![Overlay2](./../img/overlay2.gif)
+
+</p>
 :------------------|------------------
 Normal ability overlay | Filtered ability overlay (blinking alert effect)
 
