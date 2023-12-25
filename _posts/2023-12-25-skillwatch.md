@@ -1,6 +1,6 @@
 ---
 layout: post
-title: {% raw %}FFXI{% endraw %} React in time to skills with SkillWatch!
+title: 「FFXI」 React in time to skills with SkillWatch!
 
 tags: [FFXI, add-on]
 ---
