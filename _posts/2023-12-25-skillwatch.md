@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React in time to enemy skills with SkillWatch 
+title: React in time to enemy skills with SkillWatch!
 
 tags: [FFXI]
 ---
