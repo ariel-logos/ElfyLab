@@ -21,7 +21,7 @@ The overlay can be configured in different ways (see details below), for example
 It is also possible to just display the filtered skills (very useful to target specific skill to which you'd like to react with a stun!).\
 The overlay has different visual options such as size adjustment, repositioning, blinking color, etc.
 
-![Overlay1](./../img/overlay1fixed.gif)  | ![Overlay2](https://github.com/ariel-logos/ElfyLab/blob/master/img/overlay2.gif)
+![Overlay1](./../img/overlay1fixed.gif)  | ![Overlay2](./../img/overlay2.gif)
 :------------------|------------------
 Normal ability overlay | Filtered ability overlay (blinking alert effect)
 
