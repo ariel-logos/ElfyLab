@@ -159,12 +159,13 @@ a.button {
 }
 
 .home-header-background {
-    background-color: rgba(30,30,30,0.6);
+    background-color: rgba(23,23,23,0.85);
     line-height: 1.2;
     margin: auto;
     display: table;
     padding-top: 0%;
-    padding-bottom: 0%;
+    padding-bottom: 0.4%;
     padding-left: 1.2%;
     padding-right: 1.2%;
+    border-radius: 0.2em;
 }
