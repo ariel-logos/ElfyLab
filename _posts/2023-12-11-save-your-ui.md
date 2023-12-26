@@ -2,7 +2,7 @@
 layout: post
 title: Save your UI (on ReShade) with ShapeMask.fx
 
-tags: [reshade]
+tags: [ReShade]
 ---
 
 Hello everyone!

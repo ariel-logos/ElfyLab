@@ -4,7 +4,7 @@ title: FFXI ReShade Preset 1 Preview
 feature-img: "img/beforeafter/13.jpg"
 permalink: /ffxireshadepreset/preset1preview/        # Set a permalink your your page
 hide: true                           # Prevent the page title to appear in the navbar
-tags: [reshade,ffxi]
+tags: [ReShade,FFXI]
 ---
 
 In this page you can find the full list of samples for the <b>Preset 1</b>.

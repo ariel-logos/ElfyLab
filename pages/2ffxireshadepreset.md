@@ -5,7 +5,7 @@ subtitle: "A long journey chasing the perfectaru aesthetics..."
 feature-img: "img/beforeafter/13.jpg"
 permalink: /ffxireshadepreset/         # Set a permalink your your page
 hide: false                           # Prevent the page title to appear in the navbar
-tags: [reshade,ffxi]
+tags: [ReShade,FFXI]
 ---
 <div class="custom-update-block">
 <h6> Status: Work In Progress</h6><h6> Last Update: 11/12/2023</h6>

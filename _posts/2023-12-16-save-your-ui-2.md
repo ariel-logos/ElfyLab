@@ -2,7 +2,7 @@
 layout: post
 title: Save your UI (again) with ShaderToggler
 
-tags: [reshade]
+tags: [ReShade]
 ---
 
 Hello again!
