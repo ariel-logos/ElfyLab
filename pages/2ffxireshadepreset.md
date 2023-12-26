@@ -8,7 +8,11 @@ hide: false                           # Prevent the page title to appear in the 
 tags: [ReShade,FFXI]
 ---
 <div class="custom-update-block">
-<h6> Status: Work In Progress</h6><h6> Last Update: 11/12/2023</h6>
+<span>
+Status: Work In Progress</span>
+<span>
+Last Update: 11/12/2023
+</span>
 </div>
 <br>
 As a die-hard FFXI player, I invested more than I should have in tuning effects on ReShade in order to create a reasnoably good preset.

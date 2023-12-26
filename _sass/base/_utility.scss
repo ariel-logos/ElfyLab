@@ -138,11 +138,33 @@ a.button {
 }
 
 .custom-update-block {
-	background-color:#222222;
-	padding-top:1px;
-	padding-bottom:1px;
-	padding-left:15px;
-	padding-right:15px;
-	border-radius: 10px; /* Rounded corners */
+    font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+    color: var(--custom-text);
+    background-color: var(--custom-background);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px; /* Rounded corners */
 }
 
+
+.custom-update-block span {
+    display: block;
+    padding: 0px;
+    margin: 0.67em 0;
+    font-weight: bold;
+    line-height: 1.3;
+    font-size: 14px;
+}
+
+.home-header-background {
+    background-color: rgba(30,30,30,0.6);
+    line-height: 1.2;
+    margin: auto;
+    display: table;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+}
