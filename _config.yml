@@ -10,7 +10,7 @@ favicon: assets/favicon.ico                             # Icon displayed in the 
 
 # Header and footer text
 header_text: The Elfy Lab  # Change Blog header text
-header_feature_image: img/misc/homeImg2.png
+header_feature_image: img/misc/homeImg3.png
 header_feature_image_responsive: false
 footer_text: 🐇
 
