@@ -362,7 +362,7 @@ If you want to see more samples from different areas you can take a look <a href
     </div>
 <br>
 ### Final notes
-##### maybe...
+##### Maybe..?
 
 I will likely keep tweaking this preset but as of today I'm not planning any major update to it so you can expect this page to stay without new changes for a while. On the other hand, expect more insight on this topic, coming up on the home page in the future.
 Remember that, being this a research for aesthetics, everything here is very much subjective. For example, I'm pretty sure a good number of people would prefer Preset 2 over Preset 3 and that's totally reasonable. My only hope is that, if you cared to follow along, you discovered something new that could tickle your curiosity and creativity enough to motivate you in the pursuing of <span style="color:DeepPink;">your</span> favouritaru style!
