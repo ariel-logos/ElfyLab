@@ -272,26 +272,21 @@ Here's the full list:
 </ul> 
 
 The idea with this preset was to create a multi-layered version of certain effects such as bloom and AO.
-The limitation with those effects is that that you cannot have an arbitrary set of combinations of scale vs. strength of the effect... Therefore, the only way I could figure to adjust the intensity of effects at different scales was to stack multiple effects of the same type. Obviously, this comes as a cost in terms of performance if you are not using a high-end GPU. However, the appeal of light and shadows affecting the final frame with much more control on the result can definitely be worth.<br>
+The limitation with those effects is that that you cannot have an arbitrary set of combinations of scale vs. strength of the effect... Therefore, the only way I could figure to adjust the intensity of effects at different scales was to stack multiple effects of the same type. Obviously, this comes at a cost in terms of performance if you are not using a high-end GPUs. However, the appeal of light and shadows affecting the final frame with much more control on the result can definitely be worth the trouble.<br>
 In my opinion, this preset gives much more life to how light behaves and, while not free of arguably negative impact on the gameplay (you literally can't see much at night in certain caves!), it rewards the player with much more interesting sights in open environment as well as more "up-to-date" look on some game effects such as skills, spells and abilities.
 
 <h5 style="color:#ee2222;">Important! (don't skip this 🙏) </h5> 
 
-To properly be able to use this preset (but this also can apply to the previous ones!), you should defintely catch up with a previous post where I explain the wonders of the ShaderToggler plugin for ReShade (<a href="../2023/12/16/save-your-ui-2.html">link here</a>). Please be aware that, as explained in the post, this requires to user the unsigned version of ReShade (available from the official website as the "addo-on enabled" version. This can cause troubles with online games with anti-cheat software that usually whitelist the signed version of ReShade with add-ons disabled. So check ahead before using it!!!
+To properly be able to use this preset (but thiscan also apply to the previous ones!), you should defintely catch up with a previous post where I explain the wonders of the ShaderToggler plugin for ReShade (<a href="../2023/12/16/save-your-ui-2.html">link here</a>). Please be aware that, as explained in the post, this requires the use of the unsigned version of ReShade (available from the official website as the "full add-on support" version). This can cause troubles with online games with anti-cheat software that usually whitelist the signed version of ReShade with no add-ons support. Please check beforehand the policy of the game you are wishing to use this version on!
 
-Way less problematic is is mandatory use depth map data for some of the effects. To enable the correct depth-map, go to the ReShade add-on tab, then, Generic Depth add-on.
+Way less problematic is is mandatory use of depth map data for some of the effects. To enable the depth-map data, go to the ReShade add-on tab, then, look at the Generic Depth add-on.
 
 <div class="custom-image-container-centered">
 	<img src="/ElfyLab/img/posts/depthmap.png" style="max-height: 300px;"/>
 </div>
 <br>
-As you can see from the picture above, the <span style="color:MediumSeaGreen;">2048x2048</span> map is enabled.
-Unfortunately, this is a manual step required every time you load the game.
-
-I will likely keep tweaking this preset but as of today I'm not planning any major upgrade so you can expect this page to stay without updates for a while.
-Remember that being this a research for aesthetics, everything here is very much subjective. For example, I'm pretty sure a good number of people will like Preset 2 over Preset 3 and that's totally fine. My only hope is that, if you cared to follow along, you discovered something new that could tickle your curiosity and creativity in pursuing <span style="color:DeepPink;">your</span> favouritaru style!
-
-As alwys, have fun ❤️!
+As you can see from the picture above, the <span style="color:MediumSeaGreen;">2048x2048</span> map is enabled, you'll know it's the correct one in FFXI because it's the one matching the <span style="color:MediumSeaGreen;">background resolution</span> in your game options.
+Unfortunately, this is a manual step required every time you load into the game at least with the built-in plugin.
 
 <b>Download to the preset:</b> <a href="/ElfyLab/downloads/FFXI_Reshade3_(by_arielfy).ini" download>Click to Download!</a>
 
@@ -365,6 +360,14 @@ If you want to see more samples from different areas you can take a look <a href
             </div>
         </div>
     </div>
+<br>
+### Final notes
+##### maybe...
+
+I will likely keep tweaking this preset but as of today I'm not planning any major update to it so you can expect this page to stay without new changes for a while. On the other hand, expect more insight on this topic, coming up on the home page in the future.
+Remember that, being this a research for aesthetics, everything here is very much subjective. For example, I'm pretty sure a good number of people would prefer Preset 2 over Preset 3 and that's totally reasonable. My only hope is that, if you cared to follow along, you discovered something new that could tickle your curiosity and creativity enough to motivate you in the pursuing of <span style="color:DeepPink;">your</span> favouritaru style!
+
+As alwys, have fun ❤️!
 
 <script src="/ElfyLab/assets/js/imagecomparison.js"></script>
 
