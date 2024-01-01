@@ -423,7 +423,7 @@ As alwys, have fun ❤️!
             id: '#comp9'
         });
 		new BeforeAfter({
-            id: '#comp9'
+            id: '#comp10'
         });
 </script>
 
