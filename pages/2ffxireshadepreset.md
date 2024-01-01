@@ -360,6 +360,28 @@ If you want to see more samples from different areas you can take a look <a href
             </div>
         </div>
     </div>
+<div class="mainSection">
+        <div id="comp10" class="bal-container">
+            <div class="bal-after">
+                <img src="/ElfyLab/img/beforeafter/49.png">
+                <div class="bal-afterPosition afterLabel">
+                    Preset 3
+                </div>
+            </div>
+            <div class="bal-before">
+                <div class="bal-before-inset">
+                    <img src="/ElfyLab/img/beforeafter/48.png">
+                    <div class="bal-beforePosition beforeLabel">
+                        Preset 2
+                    </div>
+                </div>
+            </div>
+            <div class="bal-handle">
+                <span class="handle-left-arrow"></span>
+                <span class="handle-right-arrow"></span>
+            </div>
+        </div>
+    </div>
 <br>
 ### Final notes
 ##### Maybe..?
@@ -398,6 +420,9 @@ As alwys, have fun ❤️!
             id: '#comp8'
         });
         new BeforeAfter({
+            id: '#comp9'
+        });
+		new BeforeAfter({
             id: '#comp9'
         });
 </script>
