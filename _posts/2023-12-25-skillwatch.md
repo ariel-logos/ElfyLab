@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React in time to enemy skills with SkillWatch!
-
+thumbnail: img/beforeafter/29.png
 tags: [FFXI, add-on]
 ---
 

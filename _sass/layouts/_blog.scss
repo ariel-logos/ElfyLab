@@ -44,58 +44,121 @@
 
 /* --- Post listing --- */
 .posts {
-  .post-teaser {
-    @extend %padding-post;
-    width: 100%;
-    margin-bottom: 0;
-    display: inline-block;
-    background-size: cover;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    .post-teaser {
+        @extend %padding-post;
+        width: 100%;
+        margin-bottom: 0;
+        display: inline-block;
+        background-size: cover;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
-    p a {
-      @extend .body-link;
+        p a {
+            @extend .body-link;
+        }
+
+        .post-img {
+            vertical-align: middle;
+            border-radius: 10px;
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+            //vertical-align: middle;
+            //border-radius: 5px;
+            //overflow: hidden;
+
+            @media (min-width: $break) {
+                height: 100px;
+            }
+            //Smaller screen
+            @media screen and (max-width: $break) {
+                height: 50px;
+            }
+
+            img {
+                padding: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 0 100%;
+                //width: 100%;
+                //padding: 0;
+                //vertical-align: middle;
+            }
+        }
+
+        .post-img img {
+            -moz-transition-timing-function: ease-out;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+            -moz-transition: all 2s;
+            -webkit-transition: all 2s;
+            transition: all 2s;
+
+            &:hover {
+                -moz-transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+        }
     }
 
-    .post-img {
-      vertical-align: middle;
-      border-radius: 10px;
-      overflow: hidden;
+    .excerpt {
+        margin-top: 1em;
+    }
+}
+.post-header-img {
+    //vertical-align: middle;
+    //border-radius: 5px;
+    //overflow: hidden;
+    object-position: 0% 50%;
 
-      @media (min-width: $break) {
-        height: 250px;
-      }
+    @media (min-width: $break) {
+        height: 100px;
+    }
+    //Smaller screen
+    @media screen and (max-width: $break) {
+        height: 50px;
+    }
 
-      //Smaller screen
-      @media screen and (max-width: $break) {
-        height: 150px;
-      }
-
-      img {
+    img {
         width: 100%;
         padding: 0;
         vertical-align: middle;
-      }
-
+        object-position: 0% 50%;
     }
+}
 
-    .post-img img {
-      -moz-transition-timing-function: ease-out;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
+.post-aspect-ratio-box {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: calc(100% * (100 / 300));
+}
 
-      -moz-transition: all 2s;
-      -webkit-transition: all 2s;
-      transition: all 2s;
+.post-image-container {
+    vertical-align: middle;
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
 
-      &:hover {
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-      }
+    @media (min-width: $break) {
+        height: 100px;
     }
-  }
+    //Smaller screen
+    @media screen and (max-width: $break) {
+        height: 50px;
+    }
+}
 
-  .excerpt {
-    margin-top: 1em;
-  }
+.post-cropped-image {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0%;
 }

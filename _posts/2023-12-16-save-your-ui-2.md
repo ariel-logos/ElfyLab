@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Save your UI (again) with ShaderToggler
-
+thumbnail: img/beforeafter/35.png
 tags: [ReShade]
 ---
 

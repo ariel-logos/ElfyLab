@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Save your UI (on ReShade) with ShapeMask.fx
-
+thumbnail: img/beforeafter/37.png
 tags: [ReShade]
 ---
 
