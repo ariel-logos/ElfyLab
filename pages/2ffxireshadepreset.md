@@ -9,9 +9,13 @@ tags: [ReShade,FFXI]
 ---
 <div class="custom-update-block">
 <span>
-Status: mostly done with this</span>
+Status: mostly done with this
+</span>
 <span>
-Last Update: 29/12/2023
+<u>*NEW*</u> Check the new post on the "first setup" <a href="../2024/01/02/reshade-setup.html">here</a>!!!
+</span>
+<span>
+Last Update: 02/01/2024
 </span>
 </div>
 <br>
