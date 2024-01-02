@@ -43,24 +43,25 @@ Download the following archives and unzip them somewhere (not in the game folder
 <li>Copy and paste all the files in the <span style="color:MediumSeaGreen;">DGVoodoo</span> folder in the same directory where the pol.exe you just modified is located.</li>
 <li>Run the <span style="color:MediumSeaGreen;">dgVoodooCpl.exe</span> executable.</li>
 <li>If you successfully pasted all the files from the DGVoodoo folder you should already have everything setup as it should be.</li>
-<li>Check with the picture below that the highlighted settings are the same as you see in your DGVoodoo window. Goes without saying that, in the  <span style="color:MediumSeaGreen;">Adapter(s)</span> dropdown, you should have your main GPU selected.<br><br></li>
+<li>Check in the picture below that, the highlighted settings, are the same as those you see in your DGVoodoo window. Goes without saying that, in the  <span style="color:MediumSeaGreen;">Adapter(s)</span> dropdown, you should have your main GPU selected.<br><br></li>
 <div class="custom-image-container-centered">
 	<img src="/ElfyLab/img/posts/dgvoodoo.png" style="max-height: 350px;"/>
 </div><br>
-<li>You can now close the DGVoodoo window and again, if you wish, get rid of the original folder (don't delete the files you pasted in the pol.exe folder!!!)</li>
+<li>You can now close the DGVoodoo window and again, if you wish, get rid of the original folder (just don't delete the files you pasted in the pol.exe folder!!!)</li>
 </ol>
 ##### ReShade
 <ol>
-<li>Open the ReShade installer. You should be greeted with a warning message about this version of ReShade being intended for single-player only games. (Read more about this in the <span style="color:#ee2222;">Important</span> section <a href="https://ariel-logos.github.io/ElfyLab/ffxireshadepreset/" target="_blank">here</a>).</li>
-<li>In the new window you should be asked to select a game or application. Once again, use the <span style="color:MediumSeaGreen;">Browse</span> button to locate and select the <span style="color:MediumSeaGreen;">pol.exe</span> file.</li>
-<li>In the next window you are asked to select the rendering API. Choose the <span style="color:MediumSeaGreen;">Microsoft DirectX 10/11/12</span> option.</li>
-<li>In the next window you are asked to select a preset to install. <span style="color:MediumSeaGreen;">Browse</span> and select the <span style="color:MediumSeaGreen;">preset</span> you downloaded previously (it's the <span style="color:MediumSeaGreen;">.ini</span> file).</li>
-<li>In the next window you should see a bunch of stuff already selected, click <span style="color:MediumSeaGreen;">Next</span> and patiently wait for everything to be downloaded. After everything is done you should have this window on your screen.<br><br></li>
+<li>Copy and paste the <span style="color:MediumSeaGreen;">preset</span> you downloaded previously (it's the <span style="color:MediumSeaGreen;">.ini</span> file) in the pol.exe folder.</li>
+<li>Open the ReShade installer. You should be greeted with a warning message about this version of ReShade being intended for single-player games only. (Read more about this in the <span style="color:#ee2222;">Important</span> section <a href="https://ariel-logos.github.io/ElfyLab/ffxireshadepreset/" target="_blank">here</a>).</li>
+<li>In the new window, you should be asked to select a game or application. Once again, use the <span style="color:MediumSeaGreen;">Browse</span> button to locate and select the <span style="color:MediumSeaGreen;">pol.exe</span> file.</li>
+<li>In the next window, you are asked to select the rendering API. Choose the <span style="color:MediumSeaGreen;">Microsoft DirectX 10/11/12</span> option.</li>
+<li>In the next window, you are asked to select a preset to install. <span style="color:MediumSeaGreen;">Browse</span> and select the <span style="color:MediumSeaGreen;">preset</span> from the first step that should be now in your pol.exe folder.</li>
+<li>In the next window, you should see a bunch of stuff already selected. These are the effects that you'll need to properly run the preseted you selected in the previous step.<br>If you want to add more or remove some, you can come back to this window later be re-running the installer and picking the "Modify" option after re-selecting the pol.exe as the target application.<br>For now, click <span style="color:MediumSeaGreen;">Next</span> and patiently wait for all the effects to be downloaded. After everything is done you should have this window on your screen.<br><br></li>
 <div class="custom-image-container-centered">
 	<img src="/ElfyLab/img/posts/reshadeinstall.png" style="max-height: 400px;"/>
 </div><br>
 <li>Click on <span style="color:MediumSeaGreen;">Finish</span> and finally start your game.</li>
-<li>If everything so far has been successful, you should see in the top of your game window an overlay message from ReShade.<br><br></li>
+<li>The moment of truth! 😶 If everything up to this point has been successful, you should see, at the top of your game window, an overlay message from ReShade.<br><br></li>
 <div class="custom-image-container-centered">
 	<img src="/ElfyLab/img/posts/reshadeboot.png" style="max-height: 450px;"/>
 </div><br>
