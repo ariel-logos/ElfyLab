@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reshade and FFXI&#58; first setup
-thumbnail: img/posts/reshadeboot.png
+thumbnail: img/thumbnails/ffxi/1.png
 tags: [FFXI, ReShade]
 ---
 
