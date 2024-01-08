@@ -15,7 +15,10 @@ Status: mostly done with this
 <u>*NEW*</u> Check the new post on the "first setup" <a href="../2024/01/02/reshade-setup.html">here</a>!!!
 </span>
 <span>
-Last Update: 02/01/2024
+<u>*NEW*</u> Preset 3 Updated!
+</span>
+<span>
+Last Update: 08/01/2024
 </span>
 </div>
 <br>
@@ -292,7 +295,8 @@ Way less problematic is is mandatory use of depth map data for some of the effec
 As you can see from the picture above, the <span style="color:MediumSeaGreen;">2048x2048</span> map is enabled, you'll know it's the correct one in FFXI because it's the one matching the <span style="color:MediumSeaGreen;">background resolution</span> in your game options.
 Unfortunately, this is a manual step required every time you load into the game at least with the built-in plugin.
 
-<b>Download to the preset:</b> <a href="/ElfyLab/downloads/FFXI_Reshade3_(by_arielfy).ini" download>Click to Download!</a>
+<b>Download to the <span style="color:DeepPink;">updated</span> preset:</b> <a href="/ElfyLab/downloads/FFXI_Reshade3_(by_arielfy).ini" download>Click to Download!</a>  (Read more about the changes <a href="../2024/1/8/white-magic.html">here</a>)<br>
+<b>Download to the <span style="color:MediumSeaGreen;">old</span> preset (not recommended!):</b> <a href="/ElfyLab/downloads/FFXI_Reshade3_old_(by_arielfy).ini" download>Click to Download!</a>
 
 Down here you can see some examples of this third preset. This time, the comparison will be between Preset 2 and this preset.
 If you want to see more samples from different areas you can take a look <a href="preset3preview/">here</a>.
