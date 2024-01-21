@@ -7,7 +7,6 @@ tags: [FFXI, add-on]
 
 
 FancyTrusts is an add-on for FFXI's third-party loader and hook Ashita (<a href="https://www.ashitaxi.com/" target="_blank">https://www.ashitaxi.com/</a>).
-
 This add-on offers a much cleaner and easy to use UI to manage Trusts.
 <br><br>
 
