@@ -1,18 +1,16 @@
 ---
 layout: post
-title: React in time to enemy skills with SkillWatch!
+title: Good news for CatsEye's Geomancers&#58; Geocompass has arrived&#33;
 thumbnail: img/thumbnails/ffxi/geo.png
 tags: [FFXI, add-on]
 ---
 
 
 Geocompass is an add-on for FFXI's third-party loader and hook Ashita (https://www.ashitaxi.com/) customized for CatsEye implementation of GEO's trait Cardinal Chant (https://www.bg-wiki.com/ffxi/CatsEyeXI_Systems/Jobs#Adjustments_5).
+
 The purpose of this add-on is to provide clear tracking of the elemental bonus given by the trait, based on the character orientation.
-<br></br>  
-### What is not?
-This add-on is <b>NOT</b> compass working for the original Cardinal Chant implementation (https://www.bg-wiki.com/ffxi/Cardinal_Chant).
-I will consider working on this depending on the volume of demand for it.
-<br></br>
+<br>  
+
 ### How does it work?
 It displays a compass pointing at the element for which the character is benefitting from a buff.
 
