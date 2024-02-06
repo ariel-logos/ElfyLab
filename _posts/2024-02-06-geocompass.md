@@ -6,7 +6,7 @@ tags: [FFXI, add-on]
 ---
 
 
-Geocompass is an add-on for FFXI's third-party loader and hook Ashita (https://www.ashitaxi.com/) customized for CatsEye implementation of GEO's trait Cardinal Chant (https://www.bg-wiki.com/ffxi/CatsEyeXI_Systems/Jobs#Adjustments_5).
+Geocompass is an add-on for FFXI's third-party loader and hook Ashita (<a href="https://www.ashitaxi.com/" target="_blank">https://www.ashitaxi.com/</a>) customized for CatsEye implementation of GEO's trait Cardinal Chant (<a href="https://www.bg-wiki.com/ffxi/CatsEyeXI_Systems/Jobs#Adjustments_5" target="_blank">https://www.bg-wiki.com/ffxi/CatsEyeXI_Systems/Jobs#Adjustments_5</a>).
 
 The purpose of this add-on is to provide clear tracking of the elemental bonus given by the trait, based on the character orientation.
 <br>  
