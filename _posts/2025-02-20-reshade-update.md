@@ -5,6 +5,9 @@ thumbnail: img/thumbnails/ffxi/15.png
 tags: [FFXI, ReShade]
 ---
 
+New FFXI ReShade preset released!<br>
+New shaders, cleanups, improved performances and quality!<br>
+Keep reading to find out about what's new and where to download it!
 
 ### What's new
 
