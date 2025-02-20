@@ -41,7 +41,7 @@ Below here, you can find some examples of the effects in the new <b>Preset</b>.
 <b>Download to the custom CShade shader pack:</b> <a href="/ElfyLab/downloads/CShade.zip" download>Click to Download!</a><br>
 
   Unpack <span style="color:MediumSeaGreen;">CShade.zip</span> where you prefer <b>before</b> launching the game with the new preset and <b>then</b> copy the content (<span style="color:MediumSeaGreen;">CShade</span> folder) in your <span style="color:MediumSeaGreen;">shaders</span> folder (where you installed ReShade for FFXI).<br>
-  You should already have a <span style="color:MediumSeaGreen;">CShade</span> in it, just overwrite everything.
+  You should already have a <span style="color:MediumSeaGreen;">CShade</span> folder in it, just overwrite everything.
 
 
 {% assign nImgs = 6 %}
