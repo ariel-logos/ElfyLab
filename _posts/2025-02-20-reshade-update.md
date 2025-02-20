@@ -37,8 +37,9 @@ If this is your first time approaching ReShade on FFXI, don't forget to check th
 
 Below here, you can find some examples of the effects in the new <b>Preset</b>.
 
+<b>Download to the preset:</b> <a href="/ElfyLab/downloads/FFXI_Reshade6_(by_arielfy).ini" download>Click to Download!</a><br>
 <b>Download to the custom CShade shader pack:</b> <a href="/ElfyLab/downloads/CShade.zip" download>Click to Download!</a><br>
-<b>Download to the preset:</b> <a href="/ElfyLab/downloads/FFXI_Reshade6_(by_arielfy).ini" download>Click to Download!</a>
+Unpack this where you prefer <b>before</b> launching the game with the new preset and <b>then</b> copy the content (<span style="color:MediumSeaGreen;">CShade</span> folder) in your <span style="color:MediumSeaGreen;">shaders</span> folder (where you installed ReShade for FFXI).
 
 {% assign nImgs = 6 %}
 {% assign bef = 0 %}
