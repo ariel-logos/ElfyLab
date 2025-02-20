@@ -6,25 +6,26 @@ tags: [FFXI, ReShade]
 ---
 
 New FFXI ReShade preset released!<br>
-New shaders, cleanups, improved performances and quality!<br>
+New shaders, cleanups, improved performance and quality!<br>
 Keep reading to find out about what's new and where to download it!
 
 ### What's new
 
-After a long time away from the game I returned and decided to revamp my ReShade preset for FFXI.
-There are many improvements in the new version, the main points are listed below:
+After a long time away from the game, I returned and decided to revamp my ReShade preset for FFXI.
+The new version includes many improvements, with the main points listed below:
 <ui style="padding-left: 0; margin-left: 0; list-style-position: inside;">
-	<li>Removed a lot of shaders and reintroduced their effects through the rest of the active ones.</li>
-	<li>Solved the main issue with very bright areas (areas with close-to-white textures) by using a customized version of CShade Autoexposure shader (read below)</li>
-	<li>Fine tuned all the shaders to improve performances and scaling their effect to a reasonable scale.</li>
-	<li>Added freshly released new shaders that further improve the final result quality.</li>
+	<li>Removed unnecessary shaders and reintroduced their effects through the remaining active ones</li>
+	<li>Resolved the main issue with overly bright areas (textures close to white) by using a customized version of the CShade Autoexposure shader (see details below).</li>
+	<li>Fine-tuned all shaders to improve performance and scale their effects to a reasonable level.</li>
+	<li>Added newly released shaders that further enhance the final visual quality.</li>
 </ui>
 <br>
 
-The ReShade version I'm using to run this preset is <b>ReShade 6.3.3</b> with Add-ons support.<br>
-Credits for the original CShade shaders pack: <a href="https://github.com/papadanku/CShade" target="_blank">papadanku's CShade Git Repo</a>
+The ReShade version I'm using for this preset is <b>ReShade 6.3.3</b> with Add-ons support.<br>
+Credits for the original CShade shader pack:
+<a href="https://github.com/papadanku/CShade" target="_blank">papadanku's CShade Git Repo</a>
 
-If this is your first time approaaching ReShade on FFXI, don't forget to check these very important posts!
+If this is your first time approaching ReShade on FFXI, don't forget to check these very important posts!
 
 <ui style="padding-left: 0; margin-left: 0; list-style-position: inside;">
 	<li> <a href="/ElfyLab/2024/01/02/reshade-setup.html">First ReShade Setup on FFXI</a></li> 
