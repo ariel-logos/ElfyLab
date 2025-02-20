@@ -15,10 +15,10 @@ Status: mostly done with this
 <u>*NEW*</u> Check the new post on the "first setup" <a href="../2024/01/02/reshade-setup.html">here</a>!!!
 </span>
 <span>
-<u>*NEW*</u> Preset 3 Updated!
+<u>*NEW*</u> New Preset 6! <a href="../2025/02/20/reshade-update.html">here</a>!!!
 </span>
 <span>
-Last Update: 08/01/2024
+Last Update: 20/02/2025
 </span>
 </div>
 <br>
