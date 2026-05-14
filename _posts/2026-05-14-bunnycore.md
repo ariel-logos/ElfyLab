@@ -33,7 +33,6 @@ Around the play area there are <span style="color:MediumSeaGreen;">spawners</spa
 The <span style="color:MediumSeaGreen;">reactor</span> in the centre has four drop points around it, each one lit up with the colour it's currently demanding. Bring a cell that matches the slot, press interact again, and the reactor will consume it after a short charging animation, refilling the central timer with a chunk of bonus time. The doors close while the reactor is consuming, then reopen so you can come back with the next one. If you bring a cell of the wrong colour, well, nothing happens (other than the time you wasted on the trip 🙃).
 <br>
 
-<br>
 <div class="custom-image-container-centered">
 	<img src="/ElfyLab/img/bunnycore/reactor.png" style="max-height: 400px;"/>
 </div>
