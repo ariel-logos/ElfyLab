@@ -22,11 +22,11 @@ Last Update: 20/02/2025
 </span>
 </div>
 <br>
-As a die-hard FFXI player, I invested more than I should have in tuning effects on ReShade in order to create a reasnoably good preset.
+As a die-hard FFXI player, I invested more than I should have in tuning effects on ReShade in order to create a reasonably good preset.
 The goal in mind working on this was to achieve a significant improvement on the final image without messing up the UI layer and specific areas with already very strong effects.
 
 While I consider this still a work-in-progress, I'm ready to share the results achieved so far.
-As more sginificant improvements will be made, I will update the preset available on this page.
+As more significant improvements will be made, I will update the preset available on this page.
 
 ### Preset 1
 ##### (for limited GPU power)
@@ -132,8 +132,8 @@ If you want to see more samples from different areas you can take a look <a href
 ### Preset 2
 ##### (for maximum quality)
 <br/>
-The second preset adds more realism to the scene. To achieve that, it features effects based on RT techniques and therefore it's more taxing on your GPU. However, for mig-high GPU range (I'm working with a RX 6800 XT at the time of this post) it should be able to stay around the 60fps limit, provided you are making use of the fps addon for Ashita or equivalent for Windower.
-The limiit in pushing the effects for even better visuals is again avoiding to mess up the game UI.
+The second preset adds more realism to the scene. To achieve that, it features effects based on RT techniques and therefore it's more taxing on your GPU. However, for mid-high GPU range (I'm working with a RX 6800 XT at the time of this post) it should be able to stay around the 60fps limit, provided you are making use of the fps addon for Ashita or equivalent for Windower.
+The limit in pushing the effects for even better visuals is again avoiding to mess up the game UI.
 In this case, no matter how I tuned the effects, to keep the most relevant visual improvement, the minimap plugin (again for Ashita) was causing a lot of problems with bloom such as the minimap turning into a screen lamp:
 
 ###### Issue VS Fix
@@ -284,9 +284,9 @@ In my opinion, this preset gives much more life to how light behaves and, while 
 
 <h5 style="color:#ee2222;">Important! (don't skip this 🙏) </h5> 
 
-To properly be able to use this preset (but thiscan also apply to the previous ones!), you should defintely catch up with a previous post where I explain the wonders of the ShaderToggler plugin for ReShade (<a href="../2023/12/16/save-your-ui-2.html">link here</a>). Please be aware that, as explained in the post, this requires the use of the unsigned version of ReShade (available from the official website as the "full add-on support" version). This can cause troubles with online games with anti-cheat software that usually whitelist the signed version of ReShade with no add-ons support. Please check beforehand the policy of the game you are wishing to use this version on!
+To properly be able to use this preset (but thiscan also apply to the previous ones!), you should definitely catch up with a previous post where I explain the wonders of the ShaderToggler plugin for ReShade (<a href="../2023/12/16/save-your-ui-2.html">link here</a>). Please be aware that, as explained in the post, this requires the use of the unsigned version of ReShade (available from the official website as the "full add-on support" version). This can cause troubles with online games with anti-cheat software that usually whitelist the signed version of ReShade with no add-ons support. Please check beforehand the policy of the game you are wishing to use this version on!
 
-Way less problematic is is mandatory use of depth map data for some of the effects. To enable the depth-map data, go to the ReShade add-on tab, then, look at the Generic Depth add-on.
+Way less problematic is the mandatory use of depth map data for some of the effects. To enable the depth-map data, go to the ReShade add-on tab, then, look at the Generic Depth add-on.
 
 <div class="custom-image-container-centered">
 	<img src="/ElfyLab/img/posts/depthmap.png" style="max-height: 300px;"/>
@@ -397,7 +397,7 @@ If you want to see more samples from different areas you can take a look <a href
 I will likely keep tweaking this preset but as of today I'm not planning any major update to it so you can expect this page to stay without new changes for a while. On the other hand, expect more insight on this topic, coming up on the home page in the future.
 Remember that, being this a research for aesthetics, everything here is very much subjective. For example, I'm pretty sure a good number of people would prefer Preset 2 over Preset 3 and that's totally reasonable. My only hope is that, if you cared to follow along, you discovered something new that could tickle your curiosity and creativity enough to motivate you in the pursuing of <span style="color:DeepPink;">your</span> favouritaru style!
 
-As alwys, have fun ❤️!
+As always, have fun ❤️!
 
 <script src="/ElfyLab/assets/js/imagecomparison.js"></script>
 

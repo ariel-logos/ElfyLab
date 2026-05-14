@@ -36,4 +36,4 @@ I hate bad manners, greedy people and conformism.
 
 
 <br><br><br> 
-Original template powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>, laregely edited by me.
+Original template powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>, largely edited by me.

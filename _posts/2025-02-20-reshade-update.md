@@ -13,12 +13,12 @@ Keep reading to find out about what's new and where to download it!
 
 After a long time away from the game, I returned and decided to revamp my ReShade preset for FFXI.
 The new version includes many improvements, with the main points listed below:
-<ui style="padding-left: 0; margin-left: 0; list-style-position: inside;">
+<ul style="padding-left: 0; margin-left: 0; list-style-position: inside;">
 	<li>Removed unnecessary shaders and reintroduced their effects through the remaining active ones</li>
 	<li>Resolved the main issue with overly bright areas (textures close to white) by using a customized version of the CShade Autoexposure shader (see details below).</li>
 	<li>Fine-tuned all shaders to improve performance and scale their effects to a reasonable level.</li>
 	<li>Added newly released shaders that further enhance the final visual quality.</li>
-</ui>
+</ul>
 <br>
 
 The ReShade version I'm using for this preset is <b>ReShade 6.3.3</b> with Add-ons support.<br>
@@ -27,10 +27,10 @@ Credits for the original CShade shader pack:
 
 If this is your first time approaching ReShade on FFXI, don't forget to check these very important posts!
 
-<ui style="padding-left: 0; margin-left: 0; list-style-position: inside;">
+<ul style="padding-left: 0; margin-left: 0; list-style-position: inside;">
 	<li> <a href="/ElfyLab/2024/01/02/reshade-setup.html">First ReShade Setup on FFXI</a></li> 
 	<li> <a href="/ElfyLab/2023/12/16/save-your-ui-2.html">ShaderToggler to save the UI layer</a></li> 
-</ui>
+</ul>
 <br>  
 
 ### See the result!

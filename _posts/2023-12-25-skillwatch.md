@@ -11,12 +11,12 @@ Very simply, the purpose of this add-on is to have a clearer way to identify the
 This could be useful in a variety of situations, for example, when people are playing with relevant ping issues or the time window to react to such event is in general too short.
 <br><br>
 
-### What is not?
+### What it is not?
 This add-on is <b>NOT</b> a bot. It simply provides enhanced feedback on enemy mobs readying their skills with the same timing the typical "X readies Y" message would appear in the chat box.
 <br><br>
 
 ### How does it work?
-In short, it's a combination of parsing the chat box looking for a message, matching it with Entity informations provided by Ashita hook and drawing some visual feedback overlay.
+In short, it's a combination of parsing the chat box looking for a message, matching it with Entity information provided by Ashita hook and drawing some visual feedback overlay.
 <br><br>
 
 ### Main features

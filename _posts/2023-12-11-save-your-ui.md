@@ -16,7 +16,7 @@ Here's an example of the way-too-much brightness applied on the minimap as a res
   <img src="/ElfyLab/img/posts/reshadeIssue.png" style="max-height: 500px" />
 </div>
 
-So instead of tuning down all the effects in order to somewhat save the minimap, I decided to develop a simple effect that masks a portion of the screen from a series of of effects that can be definied by the usual Before/After paradigm.
+So instead of tuning down all the effects in order to somewhat save the minimap, I decided to develop a simple effect that masks a portion of the screen from a series of effects that can be defined by the usual Before/After paradigm.
 
 The idea is to sample the frame texture in the Before pass (before all other effects are applied) and store it in order to blend it with the After pass afterwards.
 
@@ -37,15 +37,15 @@ technique Before
 }
 ```
 
-Through the ReShade menu in-game is then possible to set up the masking shape through some very self-explainatory parameters.
+Through the ReShade menu in-game is then possible to set up the masking shape through some very self-explanatory parameters.
 
 <div class="custom-image-container-centered">
   <img src="/ElfyLab/img/posts/ShapeMask.png" style="max-height: 500px" />
 </div>
 
 
-If the textcoords of a certain pixel fall inside the shape, then the sampler from the Before pass is applied.
-Otherwise, if the textcoords fall outside the shape, then the sampler simply applies the After pass without filtering the other effects.
+If the texcoords of a certain pixel fall inside the shape, then the sampler from the Before pass is applied.
+Otherwise, if the texcoords fall outside the shape, then the sampler simply applies the After pass without filtering the other effects.
 
 ```hlsl
 if (isInsideCircle)
@@ -76,7 +76,7 @@ else
 }
 ```
 Quite easy.
-Now the real troubles begin when the UI elements you need to mask are not permament and therefore leaving the mask effect applied after they disappear.
+Now the real troubles begin when the UI elements you need to mask are not permanent and therefore leaving the mask effect applied after they disappear.
 
 <div class="custom-image-container-centered">
   <img src="/ElfyLab/img/posts/ShapeMaskfadeOff.png" style="max-height: 500px" />
@@ -119,7 +119,7 @@ So far the fix worked perfectly in different light conditions and while moving t
 
 I swear the mask effect is still enabled! 😅
 
-And the final result is a fixed UI element that is allowed to disappear without interefering with the nice effects!
+And the final result is a fixed UI element that is allowed to disappear without interfering with the nice effects!
 <div class="custom-image-container-centered">
 	<div class="custom-image-container">
   	  <img src="/ElfyLab/img/posts/reshadeIssue.png" style="max-height: 500px" />

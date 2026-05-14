@@ -12,7 +12,7 @@ If you are new to this website and just landed here, catch up with everything th
 <br>
 ### The issue
 
-If you ever had the chance to test my FFXI ReShade Preset 3, you might (or might not) arrived to the conclusion that, overall, the list of effects included in that is doing its job fairly well. However, I'm pretty sure we can agree that, when it comes to certain "environmental instances", some obvious issue arise in what we could naively describe as a "brightness problem". In fact, while in most areas everything looks alright or even great, in zones that feature a large amount of very light textures (e.g. Valkrum Dunes, Cape Terrigan, Ru'Lude Gardens and more) and under direct sunlight, suddenly the effects appear to be "too much".<br><br>
+If you ever had the chance to test my FFXI ReShade Preset 3, you might (or might not have) arrived at the conclusion that, overall, the list of effects included in that is doing its job fairly well. However, I'm pretty sure we can agree that, when it comes to certain "environmental instances", some obvious issue arise in what we could naively describe as a "brightness problem". In fact, while in most areas everything looks alright or even great, in zones that feature a large amount of very light textures (e.g. Valkurm Dunes, Cape Teriggan, Ru'Lude Gardens and more) and under direct sunlight, suddenly the effects appear to be "too much".<br><br>
 
 <div class="custom-image-container-centered">
 	<img src="/ElfyLab/img/posts/whiteissue1.png" style="max-height: 450px;"/>
@@ -27,7 +27,7 @@ Below, an example from an old photo I took back when smartphones weren't that sm
 	<img src="/ElfyLab/img/posts/mountainswhiteissue.png" style="width: 90%; object-fit: cover; max-height: 500px;"/>
 </div>
 <br>
-After this puntaliziaton we can go back discussing our issue.<br>
+After this punctualization we can go back discussing our issue.<br>
 The thing I find unique about the nature of this issue is that it can't be fixed by simply tuning down the image exposure or any other image adjustment that is applied as the image as a whole (e.g. brightness, contrast, etc.).
 <br>
 
@@ -36,10 +36,10 @@ Let's take three cases:
 <ul>
 <li><b>Case A: </b> a pixel with a dark color.</li>
 <li><b>Case B: </b> a pixel with a lighter color.</li>
-<li><b>Case C: </b> anoter pixel with a lighter color but visually different than B.</li>
+<li><b>Case C: </b> another pixel with a lighter color but visually different than B.</li>
 </ul>
 As many of the effects in the preset stack up additively and are often thresholded by their lightness, darker pixels such as A are barely affected and therefore tend to preserve their "identity" when compared to other darker pixels.
-In the case of B and C however, because of the stacking, they end up being pushed towards the color white (i.e. maximum R,G,B) with the result that the entire gamma of lighter colors are "flatten" in a smaller range of possible colors all very close to white.
+In the case of B and C however, because of the stacking, they end up being pushed towards the color white (i.e. maximum R,G,B) with the result that the entire gamma of lighter colors are "flattened" in a smaller range of possible colors all very close to white.
 <div class="custom-image-container-centered">
 	<img src="/ElfyLab/img/posts/pixels.png" style="max-height: 300px;"/>
 </div>
@@ -58,7 +58,7 @@ The curve that I found to better fix the image in those heavily bright condition
 <br>
 As you can see, the adjusting curve (white line) flexes before reaching the higher range of colors close to white going lower than the original picture balance (black line). This translates in the same range taken from the input axis, to a wider range of mapped colors in the output, effectively de-flattening colors at higher range of lightness. The white point (white circle), is moved towards the left of the top-right corner and as a result compresses the input colors making the very edge of the range translate directly into white. The overall result is that, with the new remapping using the curve, lighter color approaches white faster, which gives a nice contrast with the darker colors, but in the process are mapped over a wider range of colors.
 <br>
-Playing with this curve can have very drastic effects on the resulting image and that's why the one I'm using is not too far from the original line. However, you can judge the result in the comparison below, remembering the previous disclamer:
+Playing with this curve can have very drastic effects on the resulting image and that's why the one I'm using is not too far from the original line. However, you can judge the result in the comparison below, remembering the previous disclaimer:
 <br>
 
 <div class="mainSection">

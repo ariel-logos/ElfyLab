@@ -56,7 +56,7 @@ Download the following archives and unzip them somewhere (not in the game folder
 <li>In the new window, you should be asked to select a game or application. Once again, use the <span style="color:MediumSeaGreen;">Browse</span> button to locate and select the <span style="color:MediumSeaGreen;">pol.exe</span> file.</li>
 <li>In the next window, you are asked to select the rendering API. Choose the <span style="color:MediumSeaGreen;">Microsoft DirectX 10/11/12</span> option.</li>
 <li>In the next window, you are asked to select a preset to install. <span style="color:MediumSeaGreen;">Browse</span> and select the <span style="color:MediumSeaGreen;">preset</span> from the first step that should be now in your pol.exe folder.</li>
-<li>In the next window, you should see a bunch of stuff already selected. These are the effects that you'll need to properly run the preseted you selected in the previous step.<br>If you want to add more or remove some, you can come back to this window later be re-running the installer and picking the "Modify" option after re-selecting the pol.exe as the target application.<br>For now, click <span style="color:MediumSeaGreen;">Next</span> and patiently wait for all the effects to be downloaded. After everything is done you should have this window on your screen.<br><br></li>
+<li>In the next window, you should see a bunch of stuff already selected. These are the effects that you'll need to properly run the preset you selected in the previous step.<br>If you want to add more or remove some, you can come back to this window later by re-running the installer and picking the "Modify" option after re-selecting the pol.exe as the target application.<br>For now, click <span style="color:MediumSeaGreen;">Next</span> and patiently wait for all the effects to be downloaded. After everything is done you should have this window on your screen.<br><br></li>
 <div class="custom-image-container-centered">
 	<img src="/ElfyLab/img/posts/reshadeinstall.png" style="max-height: 400px;"/>
 </div><br>
@@ -69,7 +69,7 @@ Download the following archives and unzip them somewhere (not in the game folder
 <li>Last notes:
 <ul>
 <li> If this is your first ReShade installation your hotkey to open the ReShade overlay is likely the <span style="color:MediumSeaGreen;">Home</span> key.</li>
-<li> If you are using my presets, I highly recomment to navigate to the <span style="color:MediumSeaGreen;">Settings</span> tab and enable the <span style="color:MediumSeaGreen;">Load only enabled effects</span> option.</li>
+<li> If you are using my presets, I highly recommend to navigate to the <span style="color:MediumSeaGreen;">Settings</span> tab and enable the <span style="color:MediumSeaGreen;">Load only enabled effects</span> option.</li>
 <li>Remember that having <span style="color:MediumSeaGreen;">Performance Mode</span> enabled in the <span style="color:MediumSeaGreen;">Home</span> tab (the one with the list of all effects) really improves performances.</li>
 </ul>
 </li>
