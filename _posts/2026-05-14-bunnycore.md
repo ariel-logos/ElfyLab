@@ -2,6 +2,7 @@
 layout: post
 title: BunnyCore&#58; a hungry reactor, some bunny, and a lot of colours&#33;
 thumbnail: img/thumbnails/unity/bunnycore.png
+thumbnail_crop: middle
 tags: [Unity, Blender, Game]
 ---
 

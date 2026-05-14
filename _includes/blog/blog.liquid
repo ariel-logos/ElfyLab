@@ -16,7 +16,7 @@
             </h1>
             
 		{% if post.thumbnail %}
-        <div class="post-img">
+        <div class="post-img{% if post.thumbnail_crop %} thumbnail-crop-{{ post.thumbnail_crop }}{% endif %}">
 			<div class="post-aspect-ratio-box">
             <img src="{{ post.thumbnail | relative_url }}">
 			</div>

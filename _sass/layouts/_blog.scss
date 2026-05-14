@@ -102,6 +102,23 @@
                 transform: scale(1.1);
             }
         }
+
+        // Opt-in thumbnail crop overrides driven by `thumbnail_crop:` in a
+        // post's front-matter. Collapses the .post-aspect-ratio-box so the
+        // <img> fills the visible 100px window directly, then anchors the
+        // source via object-position. Default (no front-matter field) keeps
+        // the original behaviour, so existing posts are not affected.
+        .post-img.thumbnail-crop-top,
+        .post-img.thumbnail-crop-middle,
+        .post-img.thumbnail-crop-bottom {
+            .post-aspect-ratio-box {
+                height: 100%;
+                padding-top: 0;
+            }
+        }
+        .post-img.thumbnail-crop-top    img { object-position: 0 0%;   }
+        .post-img.thumbnail-crop-middle img { object-position: 0 50%;  }
+        .post-img.thumbnail-crop-bottom img { object-position: 0 100%; }
     }
 
     .excerpt {
