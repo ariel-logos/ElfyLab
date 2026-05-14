@@ -40,7 +40,7 @@ The <span style="color:MediumSeaGreen;">reactor</span> in the centre has four dr
 As long as you keep feeding the reactor the right colours, you can keep the run going. The central timer drains at all times, no exceptions, and once it hits zero it's game over. Your final score is just how long you survived.
 <br>
 
-The HUD has a single big progress bar that doubles as your "how scared should I be" meter. It starts <span style="color:DeepSkyBlue;">blue</span> when you have plenty of time, shifts to <span style="color:Yellow;">yellow</span>, then <span style="color:Orange;">orange</span>, and finally <span style="color:Red;">red</span> when things are really getting dire. Once you're in the red, a numeric countdown also pops up so you know exactly how many seconds you have left to <span style="color:DeepPink;">panic</span>.
+The HUD has a single big progress bar that doubles as your "how scared should I be" meter. It starts <span style="color:DeepSkyBlue;">blue</span> when you have plenty of time, shifts to <span style="color:Yellow;">yellow</span>, then <span style="color:Orange;">orange</span>, and finally <span style="color:Red;">red</span> when things are really getting dire. Once you're in the red, a numeric countdown also pops up so you know exactly how many seconds you have left to <span style="color:DeepPink;">panic</span>. 😱
 
 <div class="custom-image-container-centered">
 	<img src="/ElfyLab/img/bunnycore/hudred.png" style="max-height: 400px;"/>
@@ -62,18 +62,18 @@ Some of the things I leaned on most heavily:
 <br>
 
 ### Models and shaders, all home-made!
-This is the part I'm most proud of: <span style="color:DeepPink;">every single 3D model in the game is made by me in Blender</span>. The bunny, the reactor, the spawners, the cells, the doors, the table that holds the reactor, the disposer, all of it. Not a single asset-store mesh in the scene.
+This is the part I'm most proud of: <span style="color:DeepPink;">every single 3D model in the game is made by me in Blender</span>. 🎨 The bunny, the reactor, the spawners, the cells, the doors, the table that holds the reactor, the disposer, all of it. Not a single asset-store mesh in the scene.
 <br>
 
-The same goes for a handful of the shaders. My favourite of the bunch is the <span style="color:MediumSeaGreen;">warning-flickering light</span> that pulses on top of the reactor as the timer runs short. It's a fully custom shader that combines a colour ramp with a noisy flicker tied to the urgency of the remaining time, and honestly it sells the "you're about to lose, do something" feeling way more than the HUD bar does on its own.
+The same goes for a handful of the shaders. My favourite of the bunch is the <span style="color:MediumSeaGreen;">warning-flickering light</span> that pulses on top of the reactor as the timer runs short. ✨ It's a fully custom shader that combines a colour ramp with a noisy flicker tied to the urgency of the remaining time, and honestly it sells the "you're about to lose, do something" feeling way more than the HUD bar does on its own.
 
 <div class="custom-image-container-centered">
-	<img src="/ElfyLab/img/bunnycore/warninglight.png" style="max-height: 400px;"/>
+	<img src="/ElfyLab/img/bunnycore/warninglight.gif" style="max-height: 400px;"/>
 </div>
 <br>
 
 ### See it in action
-Here's a (long, sorry!) clip of an actual run. Feel free to skip around to get a feel for the cell pickup, the drop-point colour rotation, and the panic mode when the bar goes red:
+Here's a (long, sorry! 😅) clip of an actual run. Feel free to skip around to get a feel for the cell pickup, the drop-point colour rotation, and the panic mode when the bar goes red:
 <br>
 
 <div class="custom-image-container-centered">
