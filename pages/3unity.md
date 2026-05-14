@@ -18,7 +18,7 @@ tags: [Page]
 A small single-player time-attack arcade built in Unity (2022.3). You control a bunny tending a four-port energy reactor at the centre of the play area: each port wants a specific colour of energy cell, and you have to fetch them from randomly-timed spawners scattered around the room and drop the right ones in before the reactor's central timer drains. Every correct delivery refills the timer with bonus time and reshuffles the next colour the slot wants; wrong-colour drops simply don't register. The HUD bar shifts from blue, yellow, orange, red as time runs short, and a final countdown kicks in for the last few seconds, after which your score is just how long you survived.
 
 Under the hood the project uses Unity's new Input System for keyboard / gamepad bindings, ScriptableObjects to define each energy-cell colour as typed game data, an event-driven setup (`OnInteractPerformed`, `OnDoorsActivated`, `OnConsumedCell`) for inter-system messaging, and a three-scene flow (Home -> Loading -> Game) for transitions. Every 3D model in the game, bunny, reactor, spawners, cells, doors, is modelled by me in Blender, and a handful of the shaders are entirely my own work too, including the warning-flickering light that pulses on the reactor as the timer runs down.
-<br/>
+<br>
 
 <p align="center">
   <video src="/ElfyLab/clips/BunnyCore%20demo.mp4" controls width="720" height="480" preload="metadata" style="max-width: 100%; height: auto;"></video>
