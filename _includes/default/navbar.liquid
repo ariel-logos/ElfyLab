@@ -24,6 +24,12 @@
 
         {% for page in site.pages %}
             {% unless page.title == null or page.hide or name_page contains page.title %}
+            {% if page.title == 'About Me' %}
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Posts" title="Posts" href="{{ '/' | relative_url }}">Posts</a>
+            </li>
+            {% endif %}
             <li class="separator"> | </li>
             <li>
                 <a class="clear" aria-label="{{ page.title }}" title="{{ page.title }}" href="{{ page.url | relative_url }}">
@@ -31,12 +37,6 @@
                     {% else %} {{ page.title }} {% endif%}
                 </a>
             </li>
-            {% if page.title == 'About Me' %}
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" aria-label="Posts" title="Posts" href="{{ '/' | relative_url }}">Posts</a>
-            </li>
-            {% endif %}
             {% endunless %}
             {% assign name_page = page.title | append: name_page %}
         {% endfor %}
