@@ -3,6 +3,7 @@
     <article><section class="post-content"><p>There are no blog posts</p></section></article>
     {% endunless %}
     {% for post in paginator.posts %}
+    {% unless post.hidden %}
     <div class="post-teaser">
         <span>
           <header>
@@ -14,7 +15,7 @@
 				{{ post.title }}
               </a>
             </h1>
-            
+
 		{% if post.thumbnail %}
         <div class="post-img{% if post.thumbnail_crop %} thumbnail-crop-{{ post.thumbnail_crop }}{% endif %}">
 			<div class="post-aspect-ratio-box">
@@ -30,7 +31,7 @@
 			</div>
 		</figure>-->
         {% endif %}
-		
+
 		{% include blog/post_info.liquid author=post.author date=post.date %}
           </header>
           {% if site.excerpt or site.theme_settings.excerpt %}
@@ -47,8 +48,9 @@
               </div>
           {% endif %}
       </span>
-      
+
     </div>
+    {% endunless %}
     {% endfor %}
 </div>
 
