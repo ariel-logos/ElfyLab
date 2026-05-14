@@ -15,7 +15,7 @@ You play as a bunny tending a big four-port energy reactor in the middle of the 
 <br>
 
 The catch? Every port of the reactor demands a specific colour of energy cell, and the colour each port wants reshuffles every single time you feed it. So you'll be running around the room, picking up energy cells from spawners scattered around, and dropping them into the right ports of the reactor before its central timer drains.
-<br><br>
+<br>
 
 <br>
 <div class="custom-image-container-centered">
