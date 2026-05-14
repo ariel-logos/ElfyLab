@@ -22,7 +22,7 @@ The catch? Every port of the reactor demands a specific colour of energy cell, a
 	<img src="/ElfyLab/img/bunnycore/gameplay.png" style="max-height: 400px;"/>
 </div>
 <br>
-
+<br>
 ### How to play
 Movement is your classic four-directional input, camera-relative so the bunny goes where the stick points relative to where you're looking. Nothing fancy, just enough to feel responsive.
 <br>
@@ -49,7 +49,7 @@ The HUD has a single big progress bar that doubles as your "how scared should I 
 	<img src="/ElfyLab/img/bunnycore/hudred.png" style="max-height: 400px;"/>
 </div>
 <br>
-
+<br>
 ### Behind the scenes
 This project was originally my excuse to dig into a few Unity features I wanted to learn properly, so under the hood it's a bit more interesting than the gameplay loop might suggest.
 <br>
@@ -75,7 +75,7 @@ The same goes for a handful of the shaders. My favourite of the bunch is the <sp
 	<img src="/ElfyLab/img/bunnycore/warninglight.gif" style="max-height: 400px;"/>
 </div>
 <br>
-
+<br>
 ### See it in action
 Here's a (long, sorry! 😅) clip of an actual run. Feel free to skip around to get a feel for the cell pickup, the drop-point colour rotation, and the panic mode when the bar goes red:
 <br>
@@ -85,7 +85,7 @@ Here's a (long, sorry! 😅) clip of an actual run. Feel free to skip around to 
 	<video src="/ElfyLab/clips/BunnyCore%20demo.mp4" controls width="720" height="480" preload="none" style="max-width: 100%; height: auto;"></video>
 </div>
 <br>
-
+<br>
 ### More details
 If you want to peek at the code, check the Blender models, or just clone the whole thing and tinker, the full project is on GitHub <a href="https://github.com/ariel-logos/BunnyCore" target="_blank">here</a>.
 <br>
