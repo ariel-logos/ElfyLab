@@ -17,6 +17,7 @@ You play as a bunny tending a big four-port energy reactor in the middle of the 
 The catch? Every port of the reactor demands a specific colour of energy cell, and the colour each port wants reshuffles every single time you feed it. So you'll be running around the room, picking up energy cells from spawners scattered around, and dropping them into the right ports of the reactor before its central timer drains.
 <br><br>
 
+<br>
 <div class="custom-image-container-centered">
 	<img src="/ElfyLab/img/bunnycore/gameplay.png" style="max-height: 400px;"/>
 </div>
@@ -32,6 +33,7 @@ Around the play area there are <span style="color:MediumSeaGreen;">spawners</spa
 The <span style="color:MediumSeaGreen;">reactor</span> in the centre has four drop points around it, each one lit up with the colour it's currently demanding. Bring a cell that matches the slot, press interact again, and the reactor will consume it after a short charging animation, refilling the central timer with a chunk of bonus time. The doors close while the reactor is consuming, then reopen so you can come back with the next one. If you bring a cell of the wrong colour, well, nothing happens (other than the time you wasted on the trip 🙃).
 <br>
 
+<br>
 <div class="custom-image-container-centered">
 	<img src="/ElfyLab/img/bunnycore/reactor.png" style="max-height: 400px;"/>
 </div>
@@ -42,6 +44,7 @@ As long as you keep feeding the reactor the right colours, you can keep the run 
 
 The HUD has a single big progress bar that doubles as your "how scared should I be" meter. It starts <span style="color:DeepSkyBlue;">blue</span> when you have plenty of time, shifts to <span style="color:Yellow;">yellow</span>, then <span style="color:Orange;">orange</span>, and finally <span style="color:Red;">red</span> when things are really getting dire. Once you're in the red, a numeric countdown also pops up so you know exactly how many seconds you have left to <span style="color:DeepPink;">panic</span>. 😱
 
+<br>
 <div class="custom-image-container-centered">
 	<img src="/ElfyLab/img/bunnycore/hudred.png" style="max-height: 400px;"/>
 </div>
@@ -67,6 +70,7 @@ This is the part I'm most proud of: <span style="color:DeepPink;">every single 3
 
 The same goes for a handful of the shaders. My favourite of the bunch is the <span style="color:MediumSeaGreen;">warning-flickering light</span> that pulses on top of the reactor as the timer runs short. ✨ It's a fully custom shader that combines a colour ramp with a noisy flicker tied to the urgency of the remaining time, and honestly it sells the "you're about to lose, do something" feeling way more than the HUD bar does on its own.
 
+<br>
 <div class="custom-image-container-centered">
 	<img src="/ElfyLab/img/bunnycore/warninglight.gif" style="max-height: 400px;"/>
 </div>
@@ -76,6 +80,7 @@ The same goes for a handful of the shaders. My favourite of the bunch is the <sp
 Here's a (long, sorry! 😅) clip of an actual run. Feel free to skip around to get a feel for the cell pickup, the drop-point colour rotation, and the panic mode when the bar goes red:
 <br>
 
+<br>
 <div class="custom-image-container-centered">
 	<video src="/ElfyLab/clips/BunnyCore%20demo.mp4" controls width="720" height="480" preload="none" style="max-width: 100%; height: auto;"></video>
 </div>

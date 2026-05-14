@@ -31,6 +31,12 @@
                     {% else %} {{ page.title }} {% endif%}
                 </a>
             </li>
+            {% if page.title == 'About Me' %}
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Posts" title="Posts" href="{{ '/' | relative_url }}">Posts</a>
+            </li>
+            {% endif %}
             {% endunless %}
             {% assign name_page = page.title | append: name_page %}
         {% endfor %}
