@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Unity Stuff
-permalink: /unity/
+title: BunnyCore
+hide: true
+permalink: /projects/bunnycore/
 feature-img: "img/misc/featureImg4.png"
 tags: [Page]
 ---

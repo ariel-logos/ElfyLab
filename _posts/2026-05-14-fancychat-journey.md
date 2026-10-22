@@ -50,22 +50,25 @@ So I shyly poked my nose into the Ashita Discord, expecting a polite "go read th
 Just to give you a flavour, this is roughly the kind of code you end up writing a lot of in FFXI add-ons once you have crossed that bridge. Chase a pointer, read a value, decode some bytes:
 <br>
 
+
+After some hour spent in the CE debugger/disassembler I figured this base address and series of pointers+offsets that lead to such text in almost all "menu inventor" menus:
 ```lua
--- Read the description text shown for the currently-highlighted menu entry.
--- The address chain was found via Cheat Engine pointer scans on the menu UI.
-local function GetMenuDescription()
-    local base = ashita.memory.read_uint32(0x10A1234)
-    if base == 0 then return nil end
-
-    local descPtr = ashita.memory.read_uint32(base + 0x1C)
-    if descPtr == 0 then return nil end
-
-    -- The description is a null-terminated string in the game's own
-    -- text encoding (more on that in the next section).
-    local raw = ashita.memory.read_string(descPtr, 256)
-    return raw:gsub('%z.*', '')
-end
+SomeMenuPTR = ashita.memory.find('FFxiMain.dll', 0, 'B9????????50E8????????8BF085F674??8B46', 1, 0)
+SomeMenuPTR = ashita.memory.read_uint32(SomeMenuPTR+0x54)
+SomeMenuPTR2 = ashita.memory.read_uint32(SomeMenuPTR+0x0C)
 ```
+
+Beyond this point make sure (add a conditional) the Parent Menu is "menu    inventor" to avoid reading into random/unrelated stuff!
+
+```lua
+SomeMenuPTR2 = ashita.memory.read_uint32(SomeMenuPTR2+0x40)
+InvMenuDesc =  ashita.memory.read_string(SomeMenuPTR2, 32)
+```
+
+
+Anyway, this might be enough to achieve my objective.
+I'll let you know.
+
 
 This little pattern (memory read, pointer follow, null-terminated string decode) is the foundation of probably half of what FancyChat actually does under the hood. It is not glamorous, but each tiny pointer chain unlocks one more "I can react to that" feature for the add-on, and that compounds quickly.
 <br><br>
