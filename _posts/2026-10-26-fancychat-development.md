@@ -30,6 +30,19 @@ A few notes before we start. I kept the dates to months, because I sometimes mad
 FFXI's own interface does not let you move its elements around. That was not a big deal until I started using other add-ons whose own interfaces I wanted to combine with the game's UI, and nothing ever fit together the way I wanted. The chat window was the one that bothered me the most, so the question became very simple: what if the chat window could be placed anywhere?
 <br>
 
+There was a second reason, which I only realised once I started: if I was going to replace the chat anyway, I could also make it look a lot better than the game's own.
+<br>
+
+To give you an idea of what I was up against, this is the game's own chat window next to FancyChat, showing the same text, with the same number of lines (FancyChat adds timestamps, colours and icons):
+<br>
+
+<div class="custom-image-container-centered">
+	<img src="/ElfyLab/img/fancychat/chat-comparison.png" style="max-width: 100%; padding: 0;"/>
+</div>
+<br>
+<i>The game's own chat (left) and FancyChat (right), with the same lines.</i>
+<br>
+
 The first answer was a proof of concept so small it hardly deserves the name: a square on which I rendered incoming messages, using the Ashita API and the gdifonts library by Thorny. Not even the "Fancy" part existed yet: the earliest experiments I still have on record were called <span style="color:MediumSeaGreen;">BetterChat</span>. Below are two recordings of those experiments that I had saved (cropped to a single line, because the chat in them is full of other people's names). The two clips were recorded very close to each other, so I honestly do not know how the version numbers got mixed up. The one in plain white text, without any colours, is the older of the two.
 <br>
 
@@ -225,7 +238,7 @@ if MenuID ~= 0 then
 	MenuName = string.gsub(MenuName, '\x00', ''):trimex()
 ```
 
-A longer chain of pointers, first used in February, reads the description text of the item that is highlighted in the inventory menu. This is the tiny debug panel I used while chasing it, with the first successful read at the bottom:
+The menu name alone was not enough, though, and this is the part that gave me a rough time, being not that expert in reverse engineering. Several different menus are called "equip" and show up in very different parts of the game (trading, the market, the equipment screen and the inventory), and they deal with the item preview in different ways, so the chat had to be moved out of the way with a different strategy for each of them to avoid overlapping the preview. The only way to tell those menus apart was to read the description of the highlighted item. So I went hunting for it: I traced the function calls looking at the memory view in Cheat Engine until I found the part of the structure that contains the description, and then I wrote the chain of pointers that leads to it. This is the tiny debug panel I used while chasing it, with the first successful read at the bottom:
 <br>
 
 <div class="custom-image-container-centered">
