@@ -238,7 +238,10 @@ if MenuID ~= 0 then
 	MenuName = string.gsub(MenuName, '\x00', ''):trimex()
 ```
 
-The menu name alone was not enough, though, and this is the part that gave me a rough time, being not that expert in reverse engineering. Several different menus are called "equip" and show up in very different parts of the game (trading, the market, the equipment screen and the inventory), and they deal with the item preview in different ways, so the chat had to be moved out of the way with a different strategy for each of them to avoid overlapping the preview. The only way to tell those menus apart was to read the description of the highlighted item. So I went hunting for it: I traced the function calls looking at the memory view in Cheat Engine until I found the part of the structure that contains the description, and then I wrote the chain of pointers that leads to it. This is the tiny debug panel I used while chasing it, with the first successful read at the bottom:
+The menu name alone was not enough, though, and this is the part that gave me a rough time, being not that expert in reverse engineering. The game uses the same kind of menu, the one that lets you pick an item from your inventory, in a lot of different places: trading, the market, the equipment screen, the inventory itself, the synthesis menu (the one in the screenshot below) and, in general, whenever a menu asks you to choose something from your bags. In the game's data that shared menu is called <span style="color:MediumSeaGreen;">inventor</span> (there is a separate <span style="color:MediumSeaGreen;">equip</span> menu too), so reading its name told me nothing about where I really was. Each of those places deals with the item preview in a different way, so the chat had to be moved out of the way with a different strategy for each of them to avoid overlapping the preview.
+<br>
+
+The first ingredient was the description of the highlighted item. So I went hunting for it: I traced the function calls looking at the memory view in Cheat Engine until I found the part of the structure that contains the description, and then I wrote the chain of pointers that leads to it. This is the tiny debug panel I used while chasing it, with the first successful read at the bottom:
 <br>
 
 <div class="custom-image-container-centered">
@@ -248,6 +251,48 @@ The menu name alone was not enough, though, and this is the part that gave me a 
 <i>The debug panel showing the description of the highlighted menu entry.</i>
 <br>
 
+The description told me what I was doing, but not how I got there, and the same inventory menu can be opened from the main menu, from a synthesis or from a trade. The second ingredient was memory of my own: every frame FancyChat reads the menu that is open (its name, a second value that the game keeps next to it and, for the inventory menu, the description) and saves it in a list that works like a trail of breadcrumbs, one entry per menu opened on the way. A new menu is added at the end of the trail. If you go back to a menu that is already in the trail (for the inventory menu that means the same description and a second value that did not go down) everything that was opened after it is removed, and when the menus close the trail is emptied:
+<br>
+
+```lua
+-- (condensed) one entry per open menu: { name, extra value, description }
+local MenuLabel = { MenuName:gsub('[%s]+',''), MenuExt, '' }
+if MenuLabel[1] == 'menuinventor' then
+	MenuLabel[3] = UpperMenuString      -- description, read through the pointer chain
+end
+
+-- going back to a menu that is already in the trail: drop what was opened after it
+for M_i = #uiw.MenuList-1, 1, -1 do
+	if (MenuLabel[1] == uiw.MenuList[M_i][1] and MenuLabel[1] ~= 'menuinventor')
+	or (MenuLabel[1] == 'menuinventor' and MenuLabel[1] == uiw.MenuList[M_i][1]
+		and MenuLabel[3] == uiw.MenuList[M_i][3] and MenuLabel[2] >= uiw.MenuList[M_i][2]) then
+		for R_i = M_i+1, #uiw.MenuList do table_remove(uiw.MenuList, #uiw.MenuList) end
+	end
+end
+if #uiw.MenuList == 0 or uiw.MenuList[#uiw.MenuList][1] ~= MenuLabel[1] then
+	table_insert(uiw.MenuList, MenuLabel)
+end
+```
+
+Then the trail is read as a whole. If the inventory menu is somewhere in it, the chat has to move out of the way of its item preview. But if the same trail also contains one of the menus that show the preview somewhere else (equip, crafting, trade, delivery, hand-over, bank, loot, shop selling...), the chat uses the other strategy and does not move:
+<br>
+
+```lua
+for i = 1, #uiw.MenuList do
+	if     uiw.MenuList[i][1]:find('menuinventor') then uiw.InvIdx = i
+	elseif uiw.MenuList[i][1]:find('menuequip')    then uiw.NoShiftIdx = i
+	elseif uiw.MenuList[i][1]:find('menutskill1')  then uiw.NoShiftIdx = i   -- crafting
+	elseif uiw.MenuList[i][1]:find('menutrade')    then uiw.NoShiftIdx = i
+	-- ... delivery, hand-over, bank, loot, shop selling and a few more
+	end
+end
+
+if uiw.InvIdx > 0 then mvc.Menu1 = true end        -- inventory preview: move the chat
+if uiw.NoShiftIdx > 0 then mvc.Menu1 = false end   -- ...unless we came from one of those
+```
+
+There are a few special cases on top (the sort menus that open above the spells, abilities, mounts and emotes lists, and the auction house, which needs a fake first entry to look like the rest), but that is the idea: the same menu is not the same situation depending on the path that led to it.
+<br>
 
 All this time, the question of text was growing into an obsession. Remember the garbled boxes in the BetterChat screenshot? FFXI's chat is not UTF-8, and it is not even plain Shift-JIS: the game uses its own variant that decorates the standard code points with custom glyphs (stars, arrows, the brackets that wrap auto-translated phrases, element symbols...). My answer, at the end of January, was an approach where the incoming text is turned into a table of byte values, a few rewrite rules replace known sequences with negative "placeholder" numbers, and a last step maps those numbers to real UTF-8 characters:
 <br>
